@@ -1,0 +1,98 @@
+Launch UI Spec.
+
+Plan:
+-Separate all Map UI stuff from MainActivity to make the current "supermap" an independent component.
+-New mapless frontend Main Activity, with "Go to map" button that goes to the super map.
+-Gradually replace all with the below, focussing on the bits of functionality that perform badly on a CPU-busy map.
+
+
+
+
+
+-Warnings
+Icon: Warning triangle
+Overview: "No warnings", or "# advisories", or UNDER ATTACK, or EMP THREAT, or ALLIANCE UNDER ATTACK.
+Expands to: Threat list and advisory list.
+
+
+-Nearby Stuff
+Icon: Player with arrow to money & spanner.
+Overview: Nearest ore/damaged structure, otherwise "nothing in the vicinity".
+Expands to: Nearest entities, and GO TO Map of ore/your stuff.
+
+
+-Wealth
+Icon: Dollar
+Overview: Total, Delta per hour, Delta per 24 hours.
+Expands to: Costable entity list.
+
+
+-Health
+Icon: Med icon
+Overview: HP, Change per hour, time to live if radiation.
+Expands to: Heal button if < MAX HP.
+
+
+-Score
+Icon: Rosette
+Overview: Total pts, rank.
+Expands to: Scoring rules.
+
+
+-Location
+Icon: Satellite
+Overview: Current accuracy and fix age.
+Expands to: GPS status/fixes.
+
+
+-Construction
+Icon: Digger
+Overview: Nearby entity, or "CAN BUILD HERE".
+Expands to: Construction options or nearby entities.
+
+
+-Missile Systems
+Icon: Missiles.
+Overview: Number of systems, number of missiles, number ready to fire. Break down into nukes?
+Expands to: List of sites, inc player carried system (or buy icon) at the top.
+
+
+-Defensive Systems
+Icon: Interceptors.
+Overview: Number of systems, number of interceptors, number ready to fire (break down into fast/slow?)
+Number of sentry guns, number of sentry guns online.
+
+
+-Diplomacy
+Icon: Globe
+Overview: Alliance points, alliance rank.
+Expands to: List of allies, list of affiliates, list of enemies.
+
+
+-Reports
+Icon: Paper stack
+Overview: Number of reports, number unread, number urgent.
+Expands to: Report list.
+
+
+-Players
+Icon: Players
+Overview: Number of active players in server, inc alive.
+Expands to: Player list.
+
+
+-Settings
+Icon: Cog
+Overview: None
+Expands to: Settings
+
+
+
+
+
+Map views:
+Map views to fill screen and have common "back" icon. Different map types and UI shall inherit from this.
+-Ore & Structures (you and allies), indicating damaged ones.
+-All players, with relative power icons.
+-A specific player, all their stuff.
+-An entire alliance, all their stuff.

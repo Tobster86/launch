@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarThumbVertical="?attr/ScrollBarColour">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/PanelTransparency"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/noimei"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noimei1"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noimei2"
+            android:id="@+id/textView189"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noimei3"
+            android:id="@+id/textView139"
+            android:layout_gravity="center_horizontal"
+            android:textColor="?attr/BadColour"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noimei4"
+            android:id="@+id/textView149"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noimei5"
+            android:id="@+id/textView999"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnDiscord"
+                android:clickable="true"
+                android:onClick="ButtonDiscord"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"
+                android:layout_marginTop="@dimen/MainViewSideMargin"
+                android:layout_marginBottom="@dimen/MainViewSideMargin"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/button_discord"
+                    android:background="@drawable/text_button_normal"
+                    android:padding="@dimen/ButtonImagePadding"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnWiki"
+                android:clickable="true"
+                android:onClick="ButtonWiki"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"
+                android:layout_marginTop="@dimen/MainViewSideMargin"
+                android:layout_marginBottom="@dimen/MainViewSideMargin"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/button_wiki"
+                    android:background="@drawable/text_button_normal"
+                    android:padding="@dimen/ButtonImagePadding"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:text="@string/imei_quit"
+            android:id="@+id/btnQuit"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:clickable="true"/>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:text="@string/imei_generate"
+            android:id="@+id/btnGenerateIMEI"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</ScrollView>

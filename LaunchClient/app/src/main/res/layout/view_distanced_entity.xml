@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/SelectListSpacing"
+              android:background="@drawable/detail_button">
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgType"
+        android:layout_margin="@dimen/ButtonEdgePadding"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name"
+            android:id="@+id/txtEntityName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Location"
+            android:id="@+id/txtLocation"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgOwner"
+        android:layout_margin="@dimen/ButtonEdgePadding"/>
+</LinearLayout>

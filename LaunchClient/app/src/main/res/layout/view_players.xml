@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?attr/PanelTransparency">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:scrollbarThumbVertical="?attr/ScrollBarColour">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/players_title"
+                android:id="@+id/txtPlayerJoins"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/MainViewSpacing"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+            <TextView
+                android:id="@+id/txtGettingStats"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/WarningColour"
+                android:text="@string/getting_stats"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lytYourLot"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:layout_height="@dimen/TextViewHeight"
+                    android:inputType="text"
+                    android:id="@+id/txtFilter"
+                    android:hint="@string/filter"
+                    android:background="@drawable/edittext_background"
+                    android:layout_marginTop="@dimen/MainViewSpacing"/>
+
+                <TextView
+                    android:background="@drawable/text_button_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ButtonHeight"
+                    android:text="Sort by"
+                    android:id="@+id/btnSortBy"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/MainViewSpacing"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:clickable="true"
+                    android:layout_marginBottom="@dimen/MainViewSpacing"/>
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/MainViewSpacing"
+                android:id="@+id/lytNavTop"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnPrevTop"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_button_normal"
+                        android:padding="@dimen/ButtonEdgePadding">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/prev10"
+                            android:id="@+id/txtPrevTop"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/HorizontalSpacing"
+                            android:layout_marginRight="@dimen/HorizontalSpacing"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1"
+                        android:id="@+id/txtFromToTop"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/HorizontalSpacing"
+                        android:layout_marginRight="@dimen/HorizontalSpacing"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnNextTop"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_button_normal"
+                        android:padding="@dimen/ButtonEdgePadding">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/next10"
+                            android:id="@+id/txtNextTop"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/HorizontalSpacing"
+                            android:layout_marginRight="@dimen/HorizontalSpacing"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lytPlayers"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/MainViewSpacing"
+                    android:id="@+id/lytNavBottom"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnPrevBottom"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_button_normal"
+                        android:padding="@dimen/ButtonEdgePadding">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/prev10"
+                            android:id="@+id/txtPrevBottom"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/HorizontalSpacing"
+                            android:layout_marginRight="@dimen/HorizontalSpacing"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1"
+                        android:id="@+id/txtFromToBottom"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/HorizontalSpacing"
+                        android:layout_marginRight="@dimen/HorizontalSpacing"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnNextBottom"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_button_normal"
+                        android:padding="@dimen/ButtonEdgePadding">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/next10"
+                            android:id="@+id/txtNextBottom"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/HorizontalSpacing"
+                            android:layout_marginRight="@dimen/HorizontalSpacing"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/text_button_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ButtonHeight"
+                android:text="@string/close"
+                android:id="@+id/textView8"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/MainViewSpacing"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"
+                android:clickable="true"
+                android:onClick="ReturnToMainView"
+                android:layout_marginBottom="@dimen/MainViewSpacing"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,125 @@
+-------------------
+07/05/2017 Overhaul
+-------------------
+
+A u-shaped flow of data, to replace the current convoluted mess (of which the game library was a vast improvement, but anyway), as follows:
+
+Server Application                 Client Application
+ServerGame                         ClientGame
+ServerComms            <->         ClientComms
+
+Server & Client Application are abstract names. All other names are not.
+The Server Application shall call the ServerGame directly. The ServerGame shall callback via a ServerApplicationInterface.
+The ServerGame shall call the ServerComms directly. The ServerComms shall callback via a ServerGameInterface.
+The ServerComms shall communicate with the ClientComms via TCP connections. A handler may be required (like TobComm, only lighter and without the buffers as far as possible).
+The ClientGame shall call ClientComms directly. The ClientComms shall callback via a ClientGameInterface.
+The Client Application shall call the ClientGame directly. The ClientGame shall callback via a ClientApplicationInterface.
+
+Final class/interface names (in u-order) are as follows:
+(Server application name irrelevant)
+LaunchServerAppInterface
+LaunchServerGame
+LaunchServerGameInterface
+LaunchServerComms
+...
+LaunchClientComms
+LaunchClientGameInterface
+LaunchClientGame
+LaunchClientAppInterface
+(Client app/activity name irrelevant)
+
+LaunchServerGame and LaunchClientGame both inherit from LaunchGame. LaunchGame does not have references to any of the interfaces or classes listed above. Instead, it calls its own children through private abstract methods, which may then call other classes or interfaces as necessary. The goal of this is to reduce interface clutter. THERE MUST BE NO EMPTY IMPLEMENTATIONS OF INTERFACE METHODS.
+
+------------
+Design Notes
+------------
+
+Locks:
+Obtaining a lock on LaunchGame (of which LaunchServerGame and LaunchClientGame inherit) from the application should not be done as it will likely have an undesired effect on game timing, especially for the server which does not inherently refresh. This is because LaunchGame uses itself as a lock to protect the game state during a tick, and to protect entity containers during fast enumeration.
+
+Config:
+The abstract constructor of LaunchGame takes a reference to a Config object. On the server, this must be supplied. On the client it may not be until the server has been contacted, in which case Tick() should do nothing.
+
+Null Checking:
+Boils down to two questions: (1) Do you trust the contract? (2) Is it valid in the contract?
+(1) No, I do not. External requests can be invalid. They may also become invalid during communications; that interceptor launch request may refer to a blown-up SAM site by the time it arrives at the server. This has been somewhat flogged to death by the "Store IDs vs store references" design (we store IDs).
+(2) Yes, it can be. Config can be null on the client. Slight allusions to comms time as with (1).
+Therefore, ALL entity references MUST be checked for null before being used. All communications must return a benign error to the client if they reference null entities.
+
+Entities, and the EntityListener:
+"Rev2" brought about live connections. These were initially cumbersomely dealt with by using several interfaces to inform other classes that entities had changed; to update on the map, or send over the connection to clients, etc.
+An EntityListener interface has been created which is implemented (somewhat differently) by ServerGame and ClientGame.
+Both of these are now unconcerned with how they instigate and distribute changes; the entities that get changed now simply call back telling their listener they have changed. In the server Tick() method, it is necessary to instruct the ServerComms to start buffering (and discarding duplicates of) entity change messages to dispatch at the end of the Tick() method, by calling DispatchUpdates().
+The entities' should call their own Changed() method when their properties change in such a way that any representation of the game (visual or conceptual) changes, such that they may need to have their information redrawn or retransmitted over the network.
+
+--------
+Sessions
+--------
+
+These have been somewhat illusive and convoluted, and never really quite fit all needs. Time to nail down some design.
+I'd like to get rid of the "task queue" concept since all the "player action tasks" are "game activity blocking" until a result is returned anyway; but a number of other "tasks" need to take place synchronously as well. Let's note them:
+-Register if unregistered.
+-Authorise each session if registered.
+-Update the player's location periodically when authorised.
+-Send some form of "keepalive" while not authorised.
+-Receive changes to the game state (entity updates and events) whilst authorised, including a snapshot.
+-Handle player actions.
+-Handle declined authorisations due to account suspension.
+
+Given this, a "Task" container is still required to translate player actions into LaunchComm messages, but the need for it to handle authorisation issues is diminished. It should simply have a contructor and a "Start" function, and considered satisfied when the server either accepts or declines the action. If the session reconnects, it shall be issued as it does now. An action success/failed response is the only way to satisfy such actions; all other objects communicated will occur concurrently and not affect the action tasks.
+
+The session will maintain a "ready for task" status which the client comms shall read, and issue the current pending task, if applicable, when the session is ready. The session will immediately stop being ready when issued a task, and will be ready again once it gets a status back from the server. Receipts of statuses will proliferate back to the task, to provide the option of further actions later.
+
+
+--------------------
+17/10/2017 Alliances
+--------------------
+
+A highly demanded feature that will replace the wholly shit feature that is artillery guns. Let's make it happen.
+
+Actions:
+-Create an alliance.
+-Join an alliance.
+-Leave an alliance.
+-Declare war on another alliance.
+
+Alliances will earn (and lose) the same points of their members. They cannot earn points until they have >1 member.
+Initially, they shall be completely seperate from player ranks and weekly war rewards (but will maintain a rank from the previous week's performace).
+Players can only be a member of one alliance. The default alliance ID is -1 ("not allied").
+Alliances will have leaders ("MPs", which will be called "Dictator" if there is only one) that make decisions (admit, invite, eject, war, peace, communicate, disband, etc). MPs can make other alliance members MPs, but this power sharing will be permanent, and MPs can act unilaterally with ALL alliance functions.
+Friendly fire points will apply when inflicting damage to allies. Friendly fire warnings need updating as appropriate, and point calculations.
+Allies will appear blue. Your own structures will appear green. Enemies (members of alliances you are at war with) will appear red. Neutrals will appear black.
+Player ranks will have their allegances and status within their alliance displayed too.
+Basic chat will need to be implemented (alliances & individual players). Extended communication outside of the app will be encouraged, with Discord as a starting point. The ability to report abuse will also be required.
+
+Removed features to accelerate development (for now):
+-Eject an alliance member.
+-Propose a peace treaty to another alliance.
+-Communicate with another alliance.
+
+
+-------------------------
+17/12/2017 Reports/Events
+-------------------------
+LaunchEvents shall be split into two categories:
+-LaunchEvents. These are as they are now, but with avatar IDs removed, and not queued for sending. They will only be received by online players, and will only result in text and sound. They won't go into the "reports" list.
+-LaunchReports. These are special cases of what currently exists, with no sound. They will use player IDs and not avatarIDs, but must handle no-longer-existent players on the client. They will group summarise events that have happened in the player's absense.
+
+LaunchEvents are a trivial removal of functionality that speaks for itself.
+
+LaunchReports will use new functionality: two timestamps to track the range of time over which a series of events took place. When a "report" happens, the text will be hashed and the hash shall identify the report, with its time range set from now until now; unless it already exists, in which case the "To" time is modified to the current time.
+
+The following shall be reported:
+-Player attacked you.
+-Player attacked another player.
+-Player killed by another player.
+-Player died.
+-Player respawned.
+-Player joined.
+-Player went AWOL.
+
+
+New alliance features coming concurrently:
+-Request to join, with approve/reject by admins.
+-Admins to be able to eject members.
+-Admins to be able to change the alliance description.

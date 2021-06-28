@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@drawable/text_button_normal"
+        android:layout_width="@dimen/SmallButtonSize"
+        android:layout_height="@dimen/SmallButtonSize"
+        android:id="@+id/btnGoTo"
+        android:layout_marginRight="@dimen/ButtonImagePadding"
+        android:layout_marginBottom="@dimen/ButtonImagePadding"
+        android:padding="@dimen/ButtonInset"
+        android:src="@drawable/button_location"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:background="@drawable/text_button_normal"
+        android:layout_width="@dimen/SmallButtonSize"
+        android:layout_height="@dimen/SmallButtonSize"
+        android:id="@+id/btnZoom"
+        android:layout_marginRight="@dimen/ButtonImagePadding"
+        android:layout_marginBottom="@dimen/ButtonImagePadding"
+        android:padding="@dimen/ButtonInset"
+        android:src="@drawable/button_zoom"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:background="@drawable/text_button_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnExpand"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/ButtonImagePadding"
+        android:layout_marginBottom="@dimen/ButtonImagePadding"
+        android:padding="@dimen/ButtonInset"
+        android:src="@drawable/button_expand"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:background="@drawable/text_button_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnContract"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/ButtonImagePadding"
+        android:layout_marginBottom="@dimen/ButtonImagePadding"
+        android:padding="@dimen/ButtonInset"
+        android:src="@drawable/button_contract"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:background="@drawable/text_button_normal"
+        android:layout_width="@dimen/SmallButtonSize"
+        android:layout_height="@dimen/SmallButtonSize"
+        android:id="@+id/btnClose"
+        android:layout_marginRight="@dimen/ButtonImagePadding"
+        android:layout_marginBottom="@dimen/ButtonImagePadding"
+        android:padding="@dimen/ButtonInset"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_close"/>
+</LinearLayout>

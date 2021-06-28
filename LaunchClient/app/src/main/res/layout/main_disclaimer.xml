@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarThumbVertical="?attr/ScrollBarColour"
+            android:background="?attr/PanelTransparency">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/PanelTransparency"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/disclaimer"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer1"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer2"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer3"
+            android:id="@+id/textView9"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer4"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/rules"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SeparatorThickness"
+            android:background="?attr/ButtonEdgeColour"
+            android:layout_marginTop="@dimen/SeperatorMargins"
+            android:layout_marginBottom="@dimen/SeperatorMargins"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules1"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="?attr/BadColour"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules2"
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules3"
+            android:id="@+id/textView13"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules4"
+            android:id="@+id/textView148"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SeparatorThickness"
+            android:background="?attr/ButtonEdgeColour"
+            android:layout_marginTop="@dimen/SeperatorMargins"
+            android:layout_marginBottom="@dimen/SeperatorMargins"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/privacy"
+            android:id="@+id/textView25"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy1"
+            android:id="@+id/textView24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy2"
+            android:id="@+id/textView217"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy3"
+            android:id="@+id/textView213"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/button_privacy" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy4"
+            android:id="@+id/textView218"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SeparatorThickness"
+            android:background="?attr/ButtonEdgeColour"
+            android:layout_marginTop="@dimen/SeperatorMargins"
+            android:layout_marginBottom="@dimen/SeperatorMargins"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agreement"
+            android:id="@+id/chkAgree"
+            android:textColor="?attr/MainUIColour"
+            android:button="@drawable/checkbox"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:checked="false"
+            android:paddingLeft="@dimen/ButtonEdgePadding"/>
+
+    </LinearLayout>
+</ScrollView>

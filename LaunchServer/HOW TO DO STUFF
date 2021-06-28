@@ -1,0 +1,9 @@
+Stuff to change to switch the app between standard and "Launch! Debug" builds:
+-AndroidManifest.xml; change manifest tag at the top, and change meta-data tag for maps API key further down.
+-build.gradle (Module: app); change applicationId under defaultConfig.
+-Rename app package name; com.apps.fast.launch(test).
+-strings.xml; change app_name.
+-LaunchComms.java; change SERVER_ADDRESS and SERVER_PORT, if applicable.
+
+"This uses a build config from another version" (or similar prompt):
+-ALWAYS select "Update".

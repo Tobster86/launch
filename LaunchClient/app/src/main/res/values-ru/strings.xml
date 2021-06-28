@@ -1,0 +1,566 @@
+﻿<resources>
+    <string name="app_name">Launch!</string>
+    <string name="notification_text">Вы под атакой!</string>
+    <string name="notification_text_ally">Ваш союзник под атакой!</string>
+    <string name="welcome">Добро пожаловать, командир!</string>
+
+    <string name="disclaimer">Дисклеймер</string>
+    <string name="privacy">Конфиденциальность</string>
+    <string name="rules">Правила</string>
+    <string name="disclaimer1">Это игра в реальном времени с реальной картой работающая с помощью GPS. Будьте наблюдательны когда играете чтобы всегда быть в курсе всех событий.</string>
+    <string name="disclaimer2">Играть в эту игру пока вы упрявляете любым транспортом может быть опасно для вас и других людей и считается запрещенным.</string>
+    <string name="disclaimer3">Следуйте всем местным законам и не нарушайте прав о частной собственности.</string>
+    <string name="disclaimer4">Вы несете полную ответственность за свое решение играть в эту игру и любые последствия, которые могут возникнуть в результате этого. Веселитесь, будьте в безопасности и не пренебрегайте чужими жизнями!</string>
+    <string name="privacy1">Launch!  это бесплатная игра, которая не связана с каким-либо маркетингом, и к личной информации будут обращаться с уважением.  Изменения в политике всегда будут происходить по предварительному согласованию, чтобы продолжить игру, если продукт когда-либо станет рыночным.</string>
+    <string name="privacy2">Уникальный, надежно зашифрованный ключ, полученный от вашего устройства, используется с единственной целью - идентифицировать вашу учетную запись.Другие параметры устройства, не идентифицирующие личность, и списки запущенных приложений / служб могут быть доступны игре и ее администраторам для предотвращения мошенничества.</string>
+    <string name="privacy3">.Ваше реальное местоположение будет доступно другим игрокам. Функция \"Privacy Zone\" (приватная зона) существует, что позволяет скрыть важные места, такие как дом и рабочие места от игры.Рекомендуется использовать эту возможность перед началом игры, щелкнув значок на экране регистрации или открыв его в меню настроек позже. Он имеет следующий символ:</string>
+    <string name="privacy4">Вся внутриигровая активность регистрируется на сервере для целей администрирования, удаления багов и разработки. </string>
+    <string name="rules1">Манипулировать вашей GPS локацией(\"location spoofing\"), создавать дополнительные аккаунты и использовать эмуляторы СУРОВО ЗАПРЕЩЕНО.Все они легко обнаруживаются, и к каждому из них применяется перманентный бан по IP без предварительного предупреждения.  НЕ ПРОДОЛЖАЙТЕ, ЕСЛИ ВЫ ИСПОЛЬЗУЕТЕ ЭМУЛЯТОР, ИЗМЕНИЛИ IMEI / MEID ВАШЕГО УСТРОЙСТВА ИЛИ УСТАНОВИЛИ ЛЮБЫЕ ПРИЛОЖЕНИЯ, КОТОРЫЕ УПРАВЛЯЮТ МАНИПУЛЯЦИЕЙ GPS ИЛИ КЛОНИРОВАНИЕМ (например, «Fake GPS location» и «Parralel space»).  К этому относятся очень серьезно, и предупреждений больше не будет!  Играйте честно или не играйте вообще!</string>
+    <string name="rules2">Имена игроков, аватары или другие внутриигровые коммуникации, которые являются оскорбительными, порнографическими, горы или дискриминационными не будут допускаться и оскорбляющие игроки будут забанены.  Если у вас есть проблемы с другими культурами, игра предоставляет другие возможности, с помощью которых можно выразить свое неодобрение;  но не удивляйтесь, если они запустят по вас ракеты в ответ!</string>
+    <string name="rules3">Механика игрового процесса, функции и конфигурации могут быть изменены в любое время без предварительного уведомления в целях разработки. Всем игрокам предлагается (и поощряется) делиться своим мнением по этим вопросам через группу Discord.</string>
+    <string name="rules4">Aктивно поощряется использование \ "ошибок \" в правилах игры или другие формы \ "коварства \";  это упрощает выявление и устранение проблем!</string>
+    <string name="agreement">Я согласен с изложенным выше, что я несу единоличную ответственность за свои действия и решение играть в эту игру, и буду руководствоваться здравым смыслом при этом.</string>
+    <string name="noimei">Проблема с идентификацией устройства</string>
+    <string name="noimei1">Не удалось определить уникальный идентификатор для этого устройства, потому что это не сотовый планшет, у вас есть эмулятор, это неподдерживаемый телефон или разрешение «Чтение состояния телефона» отключено.</string>
+    <string name="noimei2">К сожалению, поддерживаются только сотовые телефоны (или другие устройства, в которых есть хотя бы SIM-карта)..</string>
+    <string name="noimei3">Использование эмулятора строго запрещено.  Регистрация учетной записи с одним из них приведет к постоянному бану не только для этой учетной записи, но и для всех устройств, которые, как определено, имеют один и тот же IP или географический адрес!  НЕ ПРОДОЛЖАЙТЕ, если у вас есть эмулятор.  Нажмите \ "Выйти \".</string>
+    <string name="noimei4">Если вы используете обычный сотовый телефон и получаете это сообщение об ошибке, пожалуйста, \ "Выйдите\", убедитесь, что все разрешения, необходимые для этого приложения, включены в настройках приложения, и повторите попытку.  Отправьте электронное письмо разработчику или сообщите в группу Discord, если это не решит проблему.</string>
+
+    <string name="gun_system">Система оружия</string>
+    <string name="missile_system">Мобильнная система запуска ракет</string>
+    <string name="air_defence_system">Мобильная система ПВО</string>
+
+    <string name="hp">%1$dhp</string>
+    <string name="hps">%1$d/%2$dhp</string>
+    <string name="pts">%1$spt</string>
+    <string name="multiplier">x%1$s</string>
+    <string name="rank_format">%1$d/%2$d</string>
+    <string name="unranked">Без ранга</string>
+
+    <string name="cms_not_fitted">Оборудуйте эту систему, чтобы запускать ракеты с вашего местоположения.</string>
+    <string name="sam_not_fitted">Оборудуйте эту систему, чтобы перехватывать вражеские ракеты с вашего местоположения.</string>
+
+    <string name="empty">Пусто</string>
+
+    <string name="desc_missile_launcher">Системы запуска ракет хранят и запускают ракеты которые позволяют вам атаковать других игроков.</string>
+    <string name="desc_sam_site">Системы ПВО хранят перехватчики и запускают их во вражеские ракеты, тем самым защищая вас и ваши постройки.</string>
+    <string name="desc_gun_turret">Gun turrets fire artillery shells at ground targets, for base defence or lighter close-range assaults.</string>
+
+    <string name="main_text_splash">Система запускается...</string>
+    <string name="main_text_help">Нужна помощь?</string>
+    <string name="main_communications_status"> Соединение с сервером:</string>
+    <string name="main_positioning_status">Узнаем  Вашу позицию:</string>
+    <string name="main_comms_establishing">Подключение...</string>
+    <string name="main_location_searching">Поиск...</string>
+    <string name="main_comms_established">Найдено с %s  скоростью.</string>
+    <string name="main_location_found">Определено с %s точностью.</string>
+    <string name="main_location_found_not_good_enough">Определено с %1$s точностью, но она должна быть лучше чем %2$s. Определяем точные координаты...</string>
+    <string name="build_structures">Постройка структур</string>
+    <string name="cannot_build">Вы не можете строить тут, потому что вы слищком близко к другим прстройкам.\nВы ложны быть на расстоянии %1$s от:</string>
+    <string name="cannot_build_ore_mine">Вы не можете построить тут шахту, в этом регионе уже есть шахта.\nВы должны быть на расстоянии %1$s от:</string>
+    <string name="purchase_missile">Купить ракету</string>
+    <string name="wealth_title">Кол-во денег</string>
+    <string name="wealth_generating">Вы генерируете %1$s в часr.</string>
+    <string name="wealth_costs">Ваши включенные структуры стоят %1$s в час.</string>
+    <string name="maintenance_costs">Cost-maintainable structures:</string>
+    <string name="total_wealth_generation">Доход за сутки: %1$s</string>
+    <string name="negative_equity">Your maintenance costs exceed your wealth generation.</string>
+    <string name="rules_title">Правила</string>
+    <string name="location">Локация</string>
+    <string name="location_updates">Недавние обновления:</string>
+    <string name="using_location">Используется %1$s локация (%2$.6f, %3$.6f) с точностью %4$s определенная %5$s назад.</string>
+    <string name="network_unavailable">Соединение с сервером недоступно.</string>
+    <string name="gps_unavailable">Невозможно обновить ваши GPS данные .</string>
+    <string name="none">НЕТ</string>
+    <string name="location_data">%1$s - %2$s (%3$.6f, %4$.6f) @ %5$s</string>
+    <string name="attacking">Атаковать %1$s</string>
+    <string name="engaging">Запустить %1$s</string>
+    <string name="intercepting">Перехватить %1$s</string>
+    <string name="upload_avatar_title">Загрузить аватар</string>
+    <string name="preview">Предпросмотр:</string>
+    <string name="reports">Обьявления</string>
+    <string name="players_title">Игроки</string>
+    <string name="players_join_title">Игроки которые хотят присоеденится к %1$s</string>
+    <string name="notification_sound">Звук уведомления</string>
+    <string name="sound_air_raid">Воздушный налет</string>
+    <string name="sound_default">Обычный</string>
+    <string name="off">Виключить</string>
+    <string name="notification_vibrate">Вибрация уведомлений:</string>
+    <string name="vibrate_long">Длинная</string>
+    <string name="vibrate_short">Короткаяt</string>
+    <string name="short_distances">Мера измерения на короткие дистанции:</string>
+    <string name="long_distances">Мера измерения на большие дистанции:</string>
+    <string name="speeds">Мера измерения скорости</string>
+    <string name="currency_symbol">Cимвол валюты:</string>
+    <string name="no_available_missiles">У вас нет доступных ракет в зоне досягаемости этой цели.</string>
+    <string name="no_available_interceptors">У вас нет доступных перехватчиков в пределах досягаемости этой цели.</string>
+    <string name="privacy_zone_title">Зона конфедициальности</string>
+    <string name="privacy_zone_blurb">Нажмите по карте, чтобы определить новую зону конфиденциальности, или нажмите на существующую зону, чтобы отредактировать её.</string>
+    <string name="privacy_radius">Радиус:</string>
+    <string name="privacy_move_out">Ваш игрок в настоящее время находится в новой зоне конфиденциальности.  Она вступит в силу только после того, как ваш игрок выйдет за её пределы..</string>
+    <string name="privacy_in_zone">Вы в зоне конфеденциальности. Используем ваше помледнее местоположение вне этой зоны.</string>
+    <string name="sort">Sort:</string>
+    <string name="missile_launcher">Система запуска ракет</string>
+    <string name="sam_site">ПВО</string>
+    <string name="missile_site">Система запуска ракет</string>
+    <string name="sentry_gun">Защитный пулемет</string>
+    <string name="ore_mine">Шахта</string>
+    <string name="registration">Пожалуйта введите свое имя и установите аватар:</string>
+    <string name="alliances">Альянсы</string>
+    <string name="create_alliance">Создать альянс</string>
+    <string name="join_alliance">Присоеденится к альянсу</string>
+    <string name="leave_alliance">Выйти из альянса</string>
+    <string name="declare_war">Обьявить войну </string>
+    <string name="alliance_creation">Пожалуйста укажите имя альянса, аватар и его описание:</string>
+    <string name="your_alliance">Вы член этого альянса:</string>
+    <string name="your_alliance_war">Ваш альянс в войне с этим альянсом.</string>
+    <string name="alliance_joining">Вы отправили запрос на вступление в этот альянс, ждите решения его лидера.</string>
+
+    <string name="missile">Ракета</string>
+    <string name="interceptor">Перехватчик</string>
+    <string name="loot">Лут</string>
+    <string name="named_entity">%1$s (%2$s)</string>
+    <string name="owners_entity">%1$s\'s %2$s</string>
+    <string name="missile_type">%1$s %2$s</string>
+    <string name="missile_site_title">Система запуска ракет</string>
+    <string name="sam_site_title">ПВО</string>
+    <string name="sentry_gun_title">защитный пулемет</string>
+    <string name="ore_mine_title">шахта</string>
+    <string name="threats">Угрозы</string>
+    <string name="cancel">ОТМЕНИТЬ</string>
+    <string name="close">ЗАКРЫТЬ</string>
+    <string name="cont">ПРОДОЛЖИТЬ</string>
+    <string name="test_notification">ОТПРАВИТЬ ТЕСТОВОЕ УВЕДОМЛЕНИЕ</string>
+    <string name="close_account">ЗАКРЫТЬ АККАУНТ</string>
+    <string name="finish">ЗАВЕРШИТЬ</string>
+    <string name="clear_all">СТЕРЕТЬ ВСЕ</string>
+    <string name="delete">УДАЛИТЬ</string>
+    <string name="save">СОХРНИТЬ</string>
+    <string name="play_store">PLAY STORE</string>
+    <string name="next10">10 &gt;&gt;</string>
+    <string name="prev10">&lt;&lt; 10</string>
+    <string name="number_range">%1$d - %2$d</string>
+    <string name="imei_quit">Выйти</string>
+    <string name="player_name">ВВЕДИТЕ НИКНЕЙМ</string>
+
+    <string name="frequency">ЧАСТОТА</string>
+    <string name="interval">Интервал уведомлений (15 минут или больше):</string>
+    <string name="alliance_name">ИМЯ АЛЬЯНСА</string>
+    <string name="alliance_description"> (Max 140 chars)</string>
+
+    <string name="username_taken">Этот никнейм уже занят. Выберете новый.</string>
+    <string name="alliance_name_taken">Имя альянса уже занято. Выберите новое.</string>
+    <string name="specify_alliance_name">Выберите имя альянса.</string>
+
+    <string name="notifications">Уведомления</string>
+    <string name="units">Меры измерения</string>
+    <string name="other">Другое</string>
+
+    <string name="value_unknown">...</string>
+
+    <string name="dialog_ok">ХОРОШО</string>
+    <string name="dialog_yes">НЕТ(ДА)</string>
+    <string name="dialog_no">НЕТ</string>
+    <string name="launching_missile">Запускаем ракету...</string>
+    <string name="launching_interceptor">Запускаем перехватчик...</string>
+    <string name="uploading_avatar">Загружаем аватар...</string>
+    <string name="downloading_avatar">СКАЧИВАЕМ АВАТАР</string>
+    <string name="respawning">Возрождение...</string>
+    <string name="constructing">Идет постройка...</string>
+    <string name="purchasing">Выполняется оплата...</string>
+    <string name="registering">Регистрация...</string>
+    <string name="selling">Продажа...</string>
+    <string name="decommissioning">Уничтожение...</string>
+    <string name="closing_account">Закрываем ваш аккаунт :)...</string>
+    <string name="repairing">Чиним...</string>
+    <string name="healing">Лечим...</string>
+    <string name="configuring">Configuring...</string>
+    <string name="upgrading">Улучшаем...</string>
+    <string name="creating_alliance">Создаем альянс...</string>
+    <string name="joining_alliance">Присоединяемся к альянсу...</string>
+    <string name="leaving_alliance">Выходим из альянса...</string>
+    <string name="declaring_war">Обьявляем войну...</string>
+    <string name="promoting">Одобряем...</string>
+    <string name="accepting">Принимаем...</string>
+    <string name="rejecting">Отклоняем...</string>
+    <string name="kicking">Выгоняем...</string>
+
+    <string name="state_online_name">Работает</string>
+    <string name="state_booting_name">Запускается</string>
+    <string name="state_selling_name">Продается</string>
+    <string name="state_offline_name">Нe работает</string>
+
+    <string name="version_mismatch_minor">Доступно обновление.Пожалуйста, посетите Google Play Store.</string>
+    <string name="version_mismatch_major_title">Значитeльное обновление уже доступно.Посетите Google Play Store</string>
+    <string name="version_mismatch_major">Обновление должно быть установлено для входа в игру.</string>
+    <string name="must_specify_target_map">Вы должны выбрать цель. Нажмите на место на карте или игрока/постройки для выбора цели.</string>
+    <string name="must_specify_target_missile">Вы должны выбрать цель. Нажмате на ракету чтобы пометить ее как цель для перехватчика.</string>
+    <string name="target_out_of_range">Цель за пределами радиуса поражения. Выбирете цель в радиусе поражения.</string>
+    <string name="deliberate_friendly_fire">Умышленный огонь по своим запрещен.</string>
+    <string name="cannot_intercept">Ваш перехватчик не может перехватить эту ракету.</string>
+    <string name="waiting_for_data">Ожидание данных. Пожалуйста, попробуйте еще раз через несколько секунд</string>
+    <string name="you_must_respawn">Вы дожны возродится перед тек как делать это!</string>
+    <string name="insufficient_funds">Недостаточно денег.</string>
+    <string name="players_cant_carry_nukes">Игроки не могут хранить ядерные ракеты в мобильных системах. Постройте ядерную систему запуска ракет, или улучшите сущаствующюю.</string>
+    <string name="site_not_nuclear">Эта система запуска ракет должна быть улучшена до ядерной если вы хотите хранить в ней ядерные ракеты.</string>
+    <string name="reloading_cant_fire">Система .</string>
+    <string name="preparing_cant_fire">Эта ракета строится и не может быть запущена.</string>
+    <string name="offline_cant_fire">Система выключена и не может быть использована.</string>
+    <string name="out_of_range">Цель вне радиуса поражения.</string>
+    <string name="decommission_confirm">Продать %1$s для возвращения %2$s валюты? (это займет %3$s для разбирания конструкции)</string>
+    <string name="sell_confirm">Продать %1$s fза %2$s?</string>
+    <string name="repair_confirm">Починить %1$s за %2$s? Вы моете безплатно починить ее просто посещяя ее.</string>
+    <string name="close_account_confirm">Вы уверены что вы хотите закрыть свой акканут?\n\nВы будете удалены из игровой карты, и ваши данные будут полнотью удалены %1$s после того как вы не открывал приложение.\n\nВы можете отменить это просто открывая приложение.\n\nВаш игрок умрет если его атакуют, теряя очки, но получит 24-часовую защиту чтобы игроки не злоупотребляли этим.</string>
+    <string name="purchase_missile_system">Купить мобильную систему запуска ракет за %1$s?</string>
+    <string name="purchase_sam_system">Купить мобильную систему ПВО за %1$s?</string>
+    <string name="construct_confirm">Построить тут %1$s за %2$s?</string>
+    <string name="construct_confirm_vowel">Построить тут %1$s за %2$s?</string>
+    <string name="construct_name_cms">система запуска ракет</string>
+    <string name="construct_name_ncms">ядерная система запуска ракет</string>
+    <string name="construct_name_sam">система ПВО</string>
+    <string name="construct_name_sentry_gun">sзащитный пулемет</string>
+    <string name="construct_name_ore_mine">шахта</string>
+    <string name="quit">Выйти из "Launch!"?</string>
+    <string name="confirm_auto">Переключить режим работы ПВО на автоматический?\n\nВ этом режимеПВО будет апускать перехватчики в любое время независимо от вашего состояния.</string>
+    <string name="confirm_semi">Переключить режим работы ПВО на полу-автоматический?\n\nВ этом режимеПВО будет запускать перехватчики в любое время когда вы не в сети или мертвы.</string>
+    <string name="confirm_manual">Переключить режим работы ПВО на ручной?\n\nВ ручном режиме у система никогда не будет запускать перехватчики сама.</string>
+    <string name="confirm_join_alliance">Хотите подать заявку на вступление в %1$s?</string>
+    <string name="confirm_join_alliance_cancel_other">Хотите подать заявку на вступление в %1$s? Это отменит ваш запрос на вступление в %2$s.</string>
+    <string name="confirm_leave_alliance">Выйти из %1$s? Вам прийдется подождать %2$s перед тем как вы сможете подать заявку на вступление в другой альянс.</string>
+    <string name="confirm_disband_alliance">Выйти из %1$s? Так как вы единственный лидер в этом альянсе альянс разформируется. Вам прийдется подождать %2$s прежде чем вы вступите в другой альянс или создадите новый.</string>
+    <string name="confirm_promote">Дать %1$s права лидера %2$s? Это действие не можеть быть отменено.</string>
+    <string name="confirm_kick">Выгнать %1$s из %2$s?</string>
+    <string name="confirm_declare_war">Обьявить войну %1$s? Она будет длится до (%2$s) или пока идин из альянсов не разформируется.</string>
+    <string name="cannot_ally">Вы не можете вступить в альянс или создать новый пока не прождете %1$s из-за выхода из предыдущего альянса.</string>
+
+    <string name="north">Северней</string>
+    <string name="northeast">Северо-восточнееt</string>
+    <string name="east">Восточнее</string>
+    <string name="southeast">Юго-восточнее</string>
+    <string name="south">Южнее</string>
+    <string name="southwest">Юго-западней</string>
+    <string name="west">Западнейt</string>
+    <string name="northwest">Северо-западней</string>
+
+    <string name="player_idle">Idle.</string>
+    <string name="player_dead">Вы мертвы, но сможете возродится через %s.</string>
+    <string name="player_spectating">Смотрите, вы можете возродится прямо сейчас!</string>
+    <string name="player_dead_name">Тут лежит тело %s</string>
+    <string name="player_respawn_protected">Под защитой после возрождения до %1$s.</string>
+    <string name="player_seen">В последний раз был в сети %1$s.</string>
+    <string name="online_now">В сети.</string>
+    <string name="alliance_members">Члены:</string>
+
+    <string name="type_name">Имя:</string>
+    <string name="range">Радиус поражения:</string>
+    <string name="blast_radius">Радиус ударной волны:</string>
+    <string name="max_damage">Максимальный урон:</string>
+    <string name="speed">Скорость:</string>
+    <string name="prep_time">Время строительства:</string>
+    <string name="flight_time">Время полета:</string>
+
+    <string name="missile_to_target">Достигнет цели через %s.</string>
+    <string name="potential_targets">Цели:</string>
+    <string name="technical_data">Техническая информация</string>
+    <string name="ready">Готово к заупску</string>
+    <string name="offline">Выключено</string>
+
+    <string name="state_offline">ВЫКЛЮЧЕНО</string>
+    <string name="state_booting">ЗАПУСТИТСЯ ЧЕРЕЗ%s</string>
+    <string name="state_online">ВКЛЮЧЕНО</string>
+    <string name="state_decommissioning">БУДЕТ ПРОДАНО ЧЕРЕЗ %s</string>
+
+    <string name="loot_value">Общая стоймость построек: %s.</string>
+    <string name="expires_in">Закончится через%s.</string>
+
+    <string name="threat_missile">Приближается %1$s ракета, запущенная %2$s.</string>
+    <string name="threat_time">Время встречи: %1$s</string>
+
+    <string name="wealth">Денег на счету:</string>
+
+    <string name="champion">Победитель</string>
+    <string name="veteran">Ветеран</string>
+    <string name="regular">Игрок</string>
+    <string name="noob">Новичек</string>
+    <string name="awol">AWOL</string>
+
+    <string name="lat_long">(%1$s, %2$s)</string>
+    <string name="nearest_entities">Ближайшие игроки/постройки:</string>
+
+    <string name="km">км</string>
+
+    <string name="health_dead">Мертв</string>
+    <string name="health_destroyed">Разрушено</string>
+
+    <string name="help_avatar">Используйте два пальца для обозначения рамок аватара.</string>
+    <string name="null_avatar">Пожалуйста, укажите рамки аватара.</string>
+
+    <string name="notification_minutes">"%d в минуту"</string>
+
+    <string name="unit_metre">м</string>
+    <string name="unit_yard">ярд</string>
+    <string name="unit_foot">фт</string>
+    <string name="unit_kilometer">км</string>
+    <string name="unit_stat_mi">м</string>
+    <string name="unit_naut_mi">мор.м.</string>
+    <string name="unit_kph">км/ч</string>
+    <string name="unit_mph">м/ч</string>
+    <string name="unit_knot">уз/с</string>
+    <string name="buy">Купить</string>
+    <string name="upgrade">%1$s &#x2794; %2$s</string>
+    <string name="upgrade_to_nuclear">Нет доступа к покупке ядерных ракет &#x2794; Доступ к покупке ядерных ракет</string>
+    <string name="upgrade_slots_confirm">Улучшить систему запуска с %1$d слотов до %2$d за  %3$s?</string>
+    <string name="upgrade_reload_confirm">Улучшить систему перезарядки с %1$s до %2$s за %3$s?</string>
+    <string name="upgrade_nuclear_confirm">Улучшить для доступа к ядерным ракетам за %1$s?</string>
+    <string name="confirm_online">Включить %1$s ?\n\nЭто будет стоить вам %2$s в час.\n\nДля включения понадобится %3$s.</string>
+    <string name="confirm_offline">Выключить %1$s ?\n\nВы сохраните %2$s в часr.\n\nЧтобы включить его вам потребуется %3$s.</string>
+    <string name="heal_confirm">Ваше здоровье восстановится через %1$s. Вылечится полностью за %2$s?</string>
+    <string name="heal_radiation_confirm">Вы умрете от радиации через %1$s если вы невыйдете из зоны излучения или его еффект не пройдет. Вылечится за %2$s?</string>
+    <string name="heal_full_health">У вас уже полное здоровье.</string>
+    <string name="heal_dead">Вы мертвы и не можете вылечится.</string>
+    <string name="title_target_gun">Укажите цель</string>
+    <string name="title_target_missile">Укажите цель</string>
+    <string name="title_target_interceptor">Укажите цель</string>
+    <string name="target_instructions">Нажмите на карту чтобі указать цель.</string>
+    <string name="target_cost">Эта атака будет стоить %1$s.</string>
+    <string name="flight_time_target">Время полета: %1$s</string>
+    <string name="friendly_fire_warning">ОГОНЬ ПО СВОИМ</string>
+    <string name="warnings">Предупреждения</string>
+    <string name="problems">Проблемы</string>
+
+    <string name="warning_aircover">НЕТ ПВО</string>
+    <string name="warning_aircover_text">Постройте систему ПВО или купите мобильную ПВО.</string>
+    <string name="warning_attack">НЕТ</string>
+    <string name="warning_attack_text">Build a missile site or buy a cruise missile system.</string>
+    <string name="warning_expenses">ВЫ ТРАТИТЕ БОЛЬШЕ ЧЕМ ЗАРАБАТЫВАЕТЕ</string>
+    <string name="warning_expenses_text">Структуры будут отключатся если вы не можете оплатить их содержание.</string>
+    <string name="warning_dead">ВЫ МЕРТВЫ</string>
+    <string name="warning_dead_text">Вы не можете ничего делать и не получаете деньги. Взродитесь как можно скорее!</string>
+    <string name="warning_radiation">ЭТОТ РЕГИОН РАДИОАКТИВЕН</string>
+    <string name="warning_radiation_text">Радиация медленно и болезненно ухудшает ваше здоровье. Если вы не можете покинуть зону радиационного заражения вам прийдется время от времени лечится.</string>
+
+    <string name="at_war_with">В войне с:</string>
+    <string name="members">Члены:</string>
+
+    <string name="empty_slot_count">Slots: %1$d/%2$d</string>
+
+    <string name="worth">Стоймость:</string>
+    <string name="offences">Средства атаки:</string>
+    <string name="defences">Средства атаки:</string>
+
+    <string name="unaffiliated">Unaffiliated</string>
+
+    <string name="attacking_noob">%1$s намного слабее вас. Нападать на него было бы бесчестно. Продолжить?</string>
+    <string name="attacking_elite">%1$s намного сильнее вас. Нападение на него, вероятно, приведет к разрушительному возмездию. Продолжать?</string>
+    <string name="attacking_respawn_protected">%1$s под защитой возрождения. Они и его структуры время неуязвимы на %2$s. Продолжать?</string>
+    <string name="attacking_respawn_protected_you">Вы под защитой возрождения и неуязвимы на %1$s. Запуск ракеты снимет эту неуязвимость. Продолжать?</string>
+    <string name="interceptor_respawn_protected_you">Вы под защитой возрождения и будете неуязвимы для% 1 $ s. Запуск перехватчика вручную устранит эту неуязвимость. Продолжать?</string>
+
+    <string name="sort_by">Сортировать список игроков по</string>
+    <string name="sort_members">Отсортировать по количеству членов</string>
+    <string name="sort_wealth">Отсортировать по количеству денег на балансе</string>
+    <string name="sort_worth">Отсортировать по стоймости</string>
+    <string name="sort_offences">Отсортировать по средствам атаки</string>
+    <string name="sort_defences">Отсортировать по средствам защиты</string>
+
+    <string name="sort_name_members">Члены</string>
+    <string name="sort_name_wealth">Денег на балансе всех членов</string>
+    <string name="sort_name_worth">Стоймость оборудования</string>
+    <string name="sort_name_offences">Средства атаки</string>
+    <string name="sort_name_defences">Средства защиты</string>
+
+    <string name="enabled">Enabled</string>
+    <string name="allies">Союзники</string>
+
+    <string name="insufficient_slots">Нет свободных слотов.</string>
+    <string name="purchase_confirm">Приобрести выбранные средства за %1$s?</string>
+
+    <string name="nuclear_information">Ядерные ракеты создают радиоактивную зону и большой импульс ЭМИ, который сбивет работу конструкций.</string>
+    <string name="tracking_information">Эта ракета преследует игроков даже если они двигаются.</string>
+    <string name="ecm_information">Эта ракета имеет передатчик помех который уменьшает шанс перехватчика сбить ракету .</string>
+
+    <string name="admin_longpress">Зажмите для активации способностей администратора.</string>
+    <string name="ban_longpress">LЗажмите для бана игрока.</string>
+    <string name="ban_confirm">Забанить %1$s?</string>
+    <string name="poison_longpress">Зажмите для жесткого бана игрока.</string>
+    <string name="poison_confirm">Жестко забанить %1$s?</string>
+    <string name="avreset_longpress">Зажмите для удаления аватара игрока.</string>
+    <string name="avreset_confirm">Удалить аватар %1$s?</string>
+
+    <string name="interceptor_out_of_range">Указаная цель не в радиусе действия.</string>
+    <string name="interceptor_too_slow">Цель слишком быстрая.</string>
+    <string name="fast_missile_information">Эта ракета достаточно быстрая для обгона некоторых перехватчиков.</string>
+    <string name="fast_interceptor_information">Этот перехватчик может прехватывать любые ракеты.</string>
+
+    <string name="unnamed">(Без имени)</string>
+
+    <string name="disable_audio">Отключить звуки</string>
+
+    <string name="rename">Переименоватся:</string>
+
+    <string name="theme">Тема карты: %1$s</string>
+    <string name="select_theme">Выберите тему</string>
+
+    <string name="tutorial_welcome">Добро пожаловать, командир!. Хотите прочесть обучение?(а хрен вам его как и эту строку удалили )</string>
+
+    <string name="filter">ФИЛЬТР</string>
+
+    <string name="specify_username">Пожалуйста, введите никнейм.</string>
+
+    <string name="value_unknown_reconnect">...%1$d</string>
+    <string name="value_unknown_download">%1$d%2$s</string>
+    <string name="bytes_per_sec">Б/с</string>
+    <string name="kilobytes_per_sec">Кб/с</string>
+    <string name="megabytes_per_sec">Мб/с</string>
+
+    <string name="offer_affiliation">Заключить союз?</string>
+    <string name="confirm_offer_affiliation">Заключить союз с %1$s? Его действие продлится до конца недели (%2$s) или пока один из альянсов не будет разфрмирован.</string>
+    <string name="confirm_accept_affiliation">Принять предложение заключения союза от %1$s? Его действие продлится до конца недели (%2$s) или пока один из альянсов не будет разфрмирован.</string>
+    <string name="your_alliance_affiliated">Ваш альянс заключил союз с этим альянсом.</string>
+    <string name="your_alliance_affiliation_proposed">Запрос заключения союза был отправлен.</string>
+    <string name="affiliated_with">Союз с:</string>
+    <string name="alliances_affiliate_title">Альянсы которые хотят заключить союз %1$s</string>
+
+    <string name="noimei5">Или нажмите \"Создать идентификацию\", чтобы создать ограниченную, неподдерживаемую и невосстановимую учетную запись планшета.</string>
+    <string name="imei_generate">СОЗДАТЬ ИДЕНТИФКАЦИЮ</string>
+
+    <string name="confirm_reject_affiliation">Отклонить запрос заключения союза от %1$s?</string>
+    <string name="confirm_declare_war_reject">Reject affiliation proposal and declare war on %1$s? This war will last until the end of the week (%2$s) or until either alliance disbands.</string>
+
+    <string name="clustering">Количество иконок для создния скопления (0=отключить):</string>
+    <string name="number">ЧИСЛО</string>
+
+    <string name="permissions_title">Разрешения</string>
+    <string name="permissions">Launch! должнен получить эти разрешения чтобы работать:</string>
+
+    <string name="permissions_state_granted">ПРЕДОСТАВЛЕНО</string>
+    <string name="permissions_state_not_granted">НЕ ПРЕДОСТАВЛЕНО</string>
+
+    <string name="permission_internet">Интернет</string>
+    <string name="permission_internet_reason">Launch! это многопользовательская онлайн-игра, поэтому требуется доступ в Интернет.</string>
+    <string name="permission_network">Состояние сети</string>
+    <string name="permission_network_reason">TCP / IP требуется Launch! для связи с игровым сервером.</string>
+    <string name="permission_vibrate">Vibrate</string>
+    <string name="permission_vibrate_reason">Launch! предлагает дополнительную вибрацию для сопровождения предупреждений о нападении.</string>
+    <string name="permission_storage">Память</string>
+    <string name="permission_storage_reason">Файлы конфигурации и другие элементы игры кэшируются на вашем устройстве для повышения эффективности. Launch! должен иметь доступ к хранилищу вашего устройства.</string>
+    <string name="permission_location">Location</string>
+    <string name="permission_location_reason">Launch! это игра, основанная на местоположении, которая использует GPS вашего устройства для размещения вашего персонажа в игровом мире. Для того, чтобы это работало, требуется разрешение на \"точное местоположение\".</string>
+    <string name="permission_phone">Phone State</string>
+    <string name="permission_phone_reason">Ваш запуск! Для учетной записи требуется уникальный идентификатор, который надежно извлекается из IMEI / MEID вашего устройства. Разрешение \"читать состояние телефона\" позволяет получить эту информацию.</string>
+    <string name="permission_reboot">Загрузка завершена</string>
+    <string name="permission_reboot_reason">Launch! raises optional \"under attack\" notifications. This permission enables the threat checking service to automatically re-enable itself after a reboot.</string>
+
+    <string name="permissions_enable">Нажмите кнопку ниже, чтобы отобразить запросы на включение разрешений. Если это не сработает, вам нужно будет включить разрешения в Android Settings \> Apps \> Launch! \> Разрешения</string>
+    <string name="button_enable_permissions">ДАТЬ РАЗРЕШЕНИЯ</string>
+
+    <string name="notification_channel_name">Уведомления об атаках</string>
+    <string name="notification_channel_description">Вы получите предупреждения о том, что вы или ваши союзники атакованы..</string>
+    <string name="diplomacy">Отправляем дипломатов...</string>
+
+    <string name="defensive_structures">Оборонительные сооружения</string>
+
+    <string name="desc_sentry_gun">Сторожевые орудия обеспечивают защиту от ракет и игроков на очень близком расстоянии.</string>
+    <string name="desc_ore_mine">Рудные шахты обнаруживают ценные залежи руды в случайных местах в пределах %1$s, которые игроки могут собирать..</string>
+    <string name="desc_ore_mine_warning">This area is already being mined. Further online ore mines will significantly reduce the value of ore discovered!</string>
+
+    <string name="ore_mine_competing">%1$d\/%2$d (%3$s)</string>
+
+    <string name="radioactive">Єта зона радиоактивна до %1$s</string>
+
+    <string name="location_help">Launch! пытается определить ваше местоположение. Убедитесь, что на вашем устройстве включен GPS и включена высокая точность. Если вы уже сделали это, попробуйте вынести устройство на улицу или к окну.</string>
+
+    <string name="default_zoom">Стандартное приближение:</string>
+
+    <string name="general_error">Произошла общая ошибка. Обратитесь к администратору.</string>
+
+    <string name="connection_settings">Настройки подключения:</string>
+    <string name="server_url">URL сервер:</string>
+    <string name="tcp_port">порт TCP:</string>
+
+    <string name="invalid_connection">Новые настройки подключения не были применены, так как они недействительны.</string>
+
+    <string name="stability_days">жив уже %1$d дня(дней)</string>
+    <string name="bounty">%1$s Награда за голову</string>
+    <string name="no_bounty">Без награды за голову</string>
+
+    <string name="nuke_respawn_protected_you">В настоящее время вы под защитой возрождения и будете неуязвимы до %1$s. Покупка чего-либо ядерного снимет эту неуязвимость. Продолжать?</string>
+
+    <string name="war">Война</string>
+
+    <string name="debug">Отладка багов</string>
+
+    <string name="winning">WПобеждает</string>
+    <string name="draw">Ничья</string>
+
+    <string name="kills">Убийства</string>
+    <string name="deaths">Смерти</string>
+    <string name="damage_inflicted">Урона нанесено</string>
+    <string name="damage_received">Урона получено</string>
+    <string name="damage">повреждения</string>
+   <string name="cost">стоимость</string>
+   <string name="efficiency">эффективность</string>
+   <string name="income">Прибыль</string>
+
+   <string name="getting_stats">Получение статистики...</string>
+
+   <string name="rubbish">Хлам!</string>
+
+   <string name="hp_efficiency">%s%s/хп</string>
+
+   <string name="alliance_leave_engaged">Вы не можете покинуть альянс во время боя!</string>
+   <string name="alliance_kick_engaged">%s все ещё в битве, и не может быть выгнан!</string>
+   <string name="alliance_join_engaged">Вы не можете присоединиться к альянсу во время битвы!</string>
+   <string name="alliance_accept_engaged">%s все ещё в битве, и не может принять!</string>
+
+   <string name="alliance_create_rspawnprot">Вы не можете создать альянс во время защиты. Ваша защита закончится через %1$с.</string>
+   <string name="notification_text_nuke_escalation">Ядерная эскалация!</string>
+   <string name="nuclear_escalations">Ядерная эскалация </string>
+   <string name="notification_settings">Теперь звук уведомлений и вибрацию вы должны настроить в настройках вашего устройства</string>
+
+   <string name="banned">Забанен</string>
+   <string name="reason">Причина</string>
+   <string name="duration">Длительность</string>
+
+   <string name="income_and_bonuses">прибыль и бонусы:</string>
+
+   <string name="bonus_basic_income">Базовая прибыль</string>
+   <string name="bonus_diplomatic_presence">Дипломатическое присутствие</string>
+   <string name="bonus_political_engagement">Политическая деятельность</string>
+   <string name="bonus_defender_of_the_nation">Защитник наций</string>
+   <string name="bonus_nuclear_superpower">Ядерная Суперсила</string>
+   <string name="bonus_weekly_kills">Еженедельные убийства</string>
+   <string name="bonus_survivor">Выживший</string>
+   <string name="bonus_hippy">Хиппи</string>
+   <string name="bonus_peace_maker">Миротворец</string>
+   <string name="bonus_war_monger">Поджигатель войны</string>
+   <string name="bonus_lone_wolf">Одинокий волк</string>
+
+   <string name="bonus_basic_income_description">За то, что жив.</string>
+   <string name="bonus_diplomatic_presence_description">Загрузка аватара.</string>
+   <string name="bonus_political_engagement_description">Присоединитесь или создайте альянс, чтобы загрузить аватар.</string>
+   <string name="bonus_defender_of_the_nation_description">Иметь систему защиты, состоящую как минимум из одной действующей структуры.</string>
+   <string name="bonus_nuclear_superpower_description">Иметь шахту ядерных ракет.</string>
+   <string name="bonus_weekly_kills_description">Накопленный бонус. Вы убили %1$d игроков на этой неделе. Убивай %2$d чтобы получать %3$s каждый час.</string>
+   <string name="bonus_survivor_description">Оставаться живым всю неделю.</string>
+   <string name="bonus_hippy_description">Не делать атак за всю неделю.</string>
+   <string name="bonus_peace_maker_description">Быть в союзе или в перемирии с %1$s игроками. Примерно %2$s.</string>
+   <string name="bonus_war_monger_description">Состоять в войне с %1$s игроков. Примерно %2$s.</string>
+   <string name="bonus_lone_wolf_description">Быть дальше %1$s от ближайшего другого игрока. Ближайший: %2$s в %3$s.</string>
+
+   <string name="admin_options">Параметры админов</string>
+   <string name="temp_ban">Временный бан</string>
+   <string name="perm_ban">Бан навсегда</string>
+   <string name="ban_reason">Причина бана:</string>
+   <string name="ban_reason_specify">Тебе стоит уточнить причину бана!</string>
+   <string name="common_reason_name">Имел имя нарушающее правила игры</string>
+   <string name="common_reason_image">Загрузил изображение нарушающее правила игры</string>
+   <string name="common_reason_multiaccounting">Множество аккаунтов</string>
+   <string name="common_reason_emulator">Фейковый GPS, эмулятор и так далее.</string>
+   <string name="name_reset">Сброс имени</string>
+   <string name="avatar_reset">Сброс аватара</string>
+    <string name="namereset_longpress">Удерживайте, чтоб сбросить имя этого игрока.</string>
+    <string name="namereset_confirm">Сбросить имя %1$s\'s?</string>
+
+    <string name="stats">Статистика</string>
+</resources>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.apps.fast.launch"      //Release
+        //applicationId "com.apps.fast.launchtest"    //Debug
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 94
+        versionName "34.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+    }
+
+    //Includes the source .java files in the project.
+    sourceSets
+    {
+        main.java.srcDirs += '../../TobComm/src'
+        main.java.srcDirs += '../../LaunchGame/src'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    def work_version = "1.0.0-alpha10"
+
+    implementation "android.arch.work:work-runtime:$work_version"
+
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    implementation 'com.google.android.gms:play-services-safetynet:15.0.1'
+
+    //Includes the .jar library outputs in the project.
+    //compile fileTree(dir: '../../LaunchGame/dist', include: ['*.jar'])
+}

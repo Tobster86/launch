@@ -1,0 +1,19 @@
+
+This concept is to lower the default hourly income, but restore it when certain criteria are met that contribute to the spirit of the game (purpose is self-explanatory).
+
+Factors:
+Value/hr - Description - Name
+----------------------------------
+350 - Being alive. - Basic Income
+50 - Having an avatar. - Diplomatic Presence
+25 - Being a member of an alliance, that must have an avatar. - Political Engagement
+50 - Having an active defense system. - National Defender
+25 - Having a nuclear missile silo. - Nuclear Superpower
+10 - Per n^2 kills. - Weekly Kills
+10 - For not dying. - Survivor
+5 - For not having made any attacks. - Hippy
+10 - Being allied/affiliated with over 25% of players. - Peace Maker
+10 - Being at war with over 25% of players. - War Monger
+20 - Being the only player for 15km. - Lone Wolf
+
+

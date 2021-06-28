@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarThumbVertical="?attr/ScrollBarColour"
+            android:background="?attr/PanelTransparency">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtCMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:text="@string/missile_system"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtCMSNotFitted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:background="?attr/TextViewBackgroundColour"
+            android:text="@string/cms_not_fitted"
+            android:textColor="?attr/InfoColour"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lytMissiles"
+            android:background="?attr/SystemBackgroundColour"
+            >
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/text_button_normal"
+                      android:id="@+id/btnBuyMissileLauncher"
+                      android:layout_marginLeft="@dimen/MainViewSideMargin"
+                      android:layout_marginRight="@dimen/MainViewSideMargin"
+                      android:layout_marginTop="@dimen/MainViewSpacing">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView22"
+                android:src="@drawable/build_missile_launcher"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ButtonInset"
+                android:layout_marginRight="@dimen/ButtonInset"
+                android:layout_marginBottom="@dimen/ButtonInset"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="£yay"
+                android:id="@+id/txtCostMissiles"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/ButtonInset"
+                android:layout_marginBottom="@dimen/ButtonInset"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SeparatorThickness"
+            android:background="?attr/ButtonEdgeColour"
+            android:layout_marginTop="@dimen/SeperatorMargins"
+            android:layout_marginBottom="@dimen/SeperatorMargins"/>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:text="@string/close"
+            android:id="@+id/btnClose"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:clickable="true"
+            android:onClick="ReturnToMainView"
+            android:layout_marginBottom="@dimen/MainViewSpacing"/>
+    </LinearLayout>
+</ScrollView>

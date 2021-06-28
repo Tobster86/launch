@@ -1,0 +1,826 @@
+commit c412025da18ddd9b10b13020e42dc98aab316110
+Author: Tobster <tobster86@gmail.com>
+Date:   Thu Aug 24 22:57:47 2017 +0100
+
+    Structure local repair.
+
+commit 7de7af0c6c560d2b6598b43c0f97ea676b115bea
+Author: Tobster <tobster86@gmail.com>
+Date:   Thu Aug 24 21:45:37 2017 +0100
+
+    Fixed problem with not changing SAM site modes.
+
+commit bc50d2496a2a8d1fd5d0861b1cfc945dbd5d1e60
+Author: Tobster <tobster86@gmail.com>
+Date:   Wed Aug 23 13:17:29 2017 +0100
+
+    Added end of week time calculation.
+
+commit c13b55f49ab6911704d3905a6a6f80bb4a4f6eea
+Author: Tobster <tobster86@gmail.com>
+Date:   Wed Aug 23 11:41:40 2017 +0100
+
+    Added penalty for players shooting down their own missiles.
+
+commit 53de70852999a91a0fcdae7641d7b5e8baa41f8f
+Author: Tobster <tobster86@gmail.com>
+Date:   Wed Aug 23 11:35:15 2017 +0100
+
+    Fixed issue where interceptors could be launched at targets outside of their range where they were cheaper than another found candidate; by moving the logic to a level of scope above.
+
+commit 5afd4c9ec34137ed2a9f563c43ff1f98a90ad665
+Author: Tobster <tobster86@gmail.com>
+Date:   Wed Aug 23 11:23:17 2017 +0100
+
+    Fixed sale values, so they reference the loaded type index not the slot index.
+
+commit 21b58e530c238dffac9465dcd6808bc2c8e1efb6
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Aug 17 21:00:50 2017 +0100
+
+    Fixes:
+    -Online/Offline of structures with ID > 0.
+    -Disallowed targetting with weapons where parent system is not online.
+    -Potential target entries appear correct number of times.
+    -Fixed player time healing.
+
+commit e4a83c8519ce20acc236e5fad2b2038a1137c380
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Aug 16 22:43:57 2017 +0100
+
+    General fixes, including:
+    -Players disinventoried when they die.
+    -Auto controls incorrectly shown on missile sites.
+    -Semi auto SAM sites made to work when player is dead.
+    -Events incorrectly coming through before snapshot received.
+    -Respawn time corruption after death.
+    -"Fire interceptor at" button.
+
+commit 8220b7e2ebc06a0a1a3558c7ff507fac59e35ec9
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Aug 15 22:49:18 2017 +0100
+
+    SAM site modes.
+
+commit 403fcd539cc429e04ba38bcb4c5b4c3880e23c69
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Aug 15 20:02:18 2017 +0100
+
+    Fixes.
+
+commit 323ec30fa327918131e50ec002ff8260b556f506
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Aug 14 22:50:31 2017 +0100
+
+    Structure online/offline complete.
+
+commit a16eb84da0ca287ace03e34df8100a95f862c147
+Author: Tobster <tobster86@gmail.com>
+Date:   Sun Aug 13 21:56:14 2017 +0100
+
+    Started (server end) structure online/offline stuff.
+
+commit 7d0936cbce641c76cdf2b81e0e2962badb0a6e47
+Author: Tobster <tobster86@gmail.com>
+Date:   Sun Aug 13 21:23:03 2017 +0100
+
+    Pruned old code, and improved save/backup.
+
+commit 696104f2908c927d14bff465ef665b09ba60ac37
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Aug 10 22:24:20 2017 +0100
+
+    *** Released Beta ***
+    Alerts.
+
+commit a976030d09c5812e3c94223d9b00886f161d32b3
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Aug 9 22:08:18 2017 +0100
+
+    Sounds.
+
+commit efa49fd28fc9fce00c2f50d2c5e28d2bc6909096
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Aug 8 21:26:28 2017 +0100
+
+    Entity visibility and respawn protection.
+
+commit aa3e3a24c99c51e5441f0773804ed0f339900bfd
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Aug 3 21:54:06 2017 +0100
+
+    Supporting healing and respawn UI.
+
+commit 788212b8da196f6afb04e7a39925f0d7ad9c98e5
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Tue Aug 1 13:50:52 2017 +0100
+
+    Respawn protection.
+
+commit 3fde840601032be73b7562b0b053291a2b13eff3
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Wed Jul 26 16:07:46 2017 +0100
+
+    Healing and wealth views.
+
+commit 8109e78076f37c0349b96a79767161d0b2b0d857
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jul 24 21:42:57 2017 +0100
+
+    Reload time upgrades.
+
+commit 9a3ff46a932c0e8fc39c8953427bffc46aeca6ea
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sat Jul 22 13:27:00 2017 +0100
+
+    Healing.
+
+commit 75f400813efd027686f50b9f6823548aa415b623
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jul 20 22:21:46 2017 +0100
+
+    Account closure and system selling.
+
+commit 2dfcd0aedb20ea31c65d61b5fa74e601cf5b7fef
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Jul 19 22:04:16 2017 +0100
+
+    Removing AWOL players.
+
+commit 66cd8c4e5faccaec75910f90e6f47f927553076b
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Jul 18 21:58:06 2017 +0100
+
+    Continuing development. Tasks & that.
+
+commit a205aab7028db6c722cab0e6c836964c495258bf
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jul 17 20:52:09 2017 +0100
+
+    Continuing development. New tasks.
+
+commit d07f2d4f9d19a04016daf162e21dcd9c900ee5b3
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sat Jul 15 13:25:12 2017 +0100
+
+    Progressing with tasks and fixes to comms issues.
+
+commit d16c594c585aaa53eabd5f3b4e2b87805fbf688b
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sat Jul 15 11:20:40 2017 +0100
+
+    Progressing with tasks and fixes to comms issues.
+
+commit 36354b9eb973cedd1a3be607899b7eabe7d7f665
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jul 13 22:18:14 2017 +0100
+
+    Continuing development.
+
+commit 4944379d2213c34bd5029f5b06f1fd979f58c13f
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Jul 12 20:00:15 2017 +0100
+
+    Continuing development.
+
+commit ac4c27731574169c9f49eb62f7905b1ff64cba4a
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Jul 11 21:35:47 2017 +0100
+
+    Continuing development. Comms messages and respawning.
+
+commit 5f13fcef70d3824528e90bcf7490d31879417f88
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jul 10 21:44:00 2017 +0100
+
+    Continuing development. Almost there with avatar uploading on registration.
+
+commit 38f63e7c1af04249e21f4882de57e844012c8c3e
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jul 6 21:35:23 2017 +0100
+
+    Continuing development. Rendering entities and fetching avatars.
+
+commit 2c14e0ed70ae3be5b9abfd37766fd99368f6d465
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Jul 5 22:00:06 2017 +0100
+
+    Sending entities and snapshot to client now.
+
+commit b97c2b4eb9904497c7de505806f80908658b7a14
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jun 29 22:13:43 2017 +0100
+
+    Logging in from client all squared away. Game snapshot, then the rest to do next.
+
+commit 7ce2e6c305daf03de60fd3e8bac838edc2c226ba
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Jun 28 22:15:28 2017 +0100
+
+    Continuing development.
+
+commit f42458465cde564918eace7958b2a4bfae0bc614
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Jun 27 22:43:53 2017 +0100
+
+    Tied up a load of loose ends in LaunchServer, and started with logging in/registration stuff.
+
+commit dd8409f0950f341fa2b7868791b8c2a264a7dea3
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jun 26 23:01:30 2017 +0100
+
+    Continuing development.
+
+commit d91e50d33b9b2379cd147b4dbd4aa9bd073f9d30
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Jun 25 22:58:23 2017 +0100
+
+    Client now gets as far as registration screen.
+
+commit 3a53d71cfb51cfe97012333e7270751cceea8b60
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jun 22 20:24:03 2017 +0100
+
+    Server & Client now talking with keepalives & everything.
+
+commit 354641f11d2af1c5c569581020f79ec215f97065
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Jun 20 21:20:21 2017 +0100
+
+    Logging.
+
+commit b600e6cba96749eeeff56e4ac4637d436f7971f1
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sat Jun 17 13:38:24 2017 +0100
+
+    More new implementations.
+
+commit 0aff4d773c72755186b7da87b39bbe6474315dde
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Jun 14 22:32:14 2017 +0100
+
+    Supporting integration with app and further development.
+
+commit b51d72a01616b0a3bb7f4eb8bcf8bacfc8728d3e
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Jun 13 22:32:09 2017 +0100
+
+    Supporting integration with app and further development.
+
+commit 86beaf7ba9ad8bd9ca74f019e91f0ca7c4ffd42b
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jun 12 22:16:15 2017 +0100
+
+    Supporting integration with app and further development.
+
+commit 28926b7516a2b379244d6fa5dde1cbed6f3eec65
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Jun 11 22:12:31 2017 +0100
+
+    Supporting integration with app and further development.
+
+commit 6316eea0289efc30744966fdfab3b4e5ae565cf2
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Jun 6 22:05:04 2017 +0100
+
+    Supporting integration with app and further development.
+
+commit 90fafafc16d96fbbe4cc0aaad61d34973802e684
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jun 5 21:54:18 2017 +0100
+
+    Supporting integration with app and further development.
+
+commit 4af94447b31a926ca2fc25dc1fc5c5304a12091e
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jun 1 23:09:39 2017 +0100
+
+    Continuing new design. More stuff, ready to start integrating with app.
+
+commit a4de43e84c5a0a7b9a399adbd85ad5546b97d6bb
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed May 31 21:32:07 2017 +0100
+
+    Continuing new design. Comms overhaul in progress now.
+
+commit 5f5dceeb143c1b36db3f17758fd95581faede101
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue May 30 22:12:47 2017 +0100
+
+    Continuing new design.
+
+commit a08fe4176d6b320b8b7d5972469a714806dd10b5
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sat May 27 22:20:59 2017 +0100
+
+    More new implementations.
+
+commit dcd5f8e46fda60b1e02e9bed1b919cb306f4af32
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue May 23 22:05:48 2017 +0100
+
+    Continuing new design.
+
+commit ee82751df8c23868d1d5d50abe65ee2979fbf0db
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sun May 21 22:45:09 2017 +0100
+
+    Doing config transfer now.
+
+commit 56a3adab2be5eb477a89435c913df3dc166d23fd
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Sat May 20 18:24:32 2017 +0100
+
+    Half way through file transfers server side (avatar transfer handler done, config handler to do).
+
+commit f54bf468d81814b112f37409844672e04d5ae9b0
+Author: tobster <tobster@tobster-ThinkPad-T410>
+Date:   Wed May 17 22:57:27 2017 +0100
+
+    Started sessions.
+
+commit 46f0062b9e000dfc751a5c2da584cfa1f55bf0fb
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu May 11 22:54:06 2017 +0100
+
+    Continuing new design (started on server comms).
+
+commit 23156a983eb61fdc853d4c2b875d31e8ad0d71d6
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue May 9 21:41:40 2017 +0100
+
+    Continuing new design (LaunchServerGame implementation).
+
+commit 8ee16cb970b7d77227eea29cd58574333f3fb163
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon May 8 23:07:39 2017 +0100
+
+    Continuing new design.
+
+commit b6d4597215333e1f8efe76b7fec0c0283c4f88d5
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun May 7 23:08:56 2017 +0100
+
+    Started new design and testing.
+
+commit 05314ee60eee97ff461b80cbb99e990f0bc51ebe
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sat May 6 22:40:10 2017 +0100
+
+    AWOL finished (untested).
+
+commit 3d45bcef70371a162ff53f06cb6d4b9214dc9dc3
+Author: git <git@byrecottage.duckdns.org>
+Date:   Fri May 5 23:00:13 2017 +0100
+
+    AWOL in progress (determination of state; use of variable to do).
+
+commit 114d9f071f0370ea7da030cfe18413f871c78962
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu May 4 23:26:05 2017 +0100
+
+    Structure charging etc.
+
+commit 9039c26aa545255def082b24d57e24c5bfa7facd
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed May 3 22:48:44 2017 +0100
+
+    Basic healing and radiation damage.
+
+commit 078afefeba0a43ff004d1c9d2fa8ae33b81b19e0
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sun Apr 30 22:37:02 2017 +0100
+
+    Avatar setting and other tweaks.
+
+commit 75d9acaf0cd73c4b2d9b3c63a1bbdbdcf7208058
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sun Apr 30 17:59:04 2017 +0100
+
+    *** Released beta ***
+
+commit e2f5067734de376aa4365b1e95ce956216eca42d
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Apr 27 23:09:41 2017 +0100
+
+    Server email.
+
+commit 03682ec9b0b9695d962784fe2d8048ca9e5c34d3
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Apr 25 21:48:34 2017 +0100
+
+    Finished scoring and end of week.
+
+commit 68dfa4f712f78dddef89b0234311e73699757fb2
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Apr 25 21:03:20 2017 +0100
+
+    Added "unset" property.
+
+commit e5b14d0eb4ae7dba0574b05742dc67b22330f5f2
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Apr 24 22:09:31 2017 +0100
+
+    Points and end of week finished (untested).
+
+commit 173738f2c4b293fbeb3d31b08da2aedffe658525
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Apr 23 22:01:17 2017 +0100
+
+    Points.
+
+commit 7c7248469c25c9e3c018b349c605e858d2a6bf24
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sun Apr 23 08:44:31 2017 +0100
+
+    Points.
+
+commit cfb4a8dfcc514e638e01c18a71485cf56323cb3d
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Apr 20 21:50:41 2017 +0100
+
+    Points.
+
+commit 748ee133dac6238365c4bc6bd42324eff262e27b
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sun Apr 16 18:55:36 2017 +0100
+
+    Warning problems (untested).
+
+commit 91f59869c08065d65217a9612c495d1f3079f268
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Apr 13 21:38:25 2017 +0100
+
+    Artillery test.
+
+commit 39d59e19d94db7bf843ff3eca2eafe06e6cc79a2
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Apr 11 22:22:32 2017 +0100
+
+    Events
+
+commit e63f6b7a175f174c37623ef5ebc99170e0174ec7
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Apr 10 22:19:47 2017 +0100
+
+    Loot and radiation expiry.
+
+commit 58601b1bfffc87b3992b1f2fc4d6dd53d41ae011
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Apr 4 21:33:47 2017 +0100
+
+    Corrected config option.
+
+commit e123543badf0c66dd3238c0a4ce10a1265f1b0a8
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sun Apr 2 18:21:28 2017 +0100
+
+    Saving complete.
+
+commit d8beabf5ce770b3412f520fb1754b9859de7d700
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Mar 28 21:47:38 2017 +0100
+
+    Saving and loading completed bar testing.
+
+commit ac9c09625397705d98e6b4201056e19025797763
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Mar 27 22:22:22 2017 +0100
+
+    More loading...
+
+commit 816b1e56c92c52e1e250581e42250c8eeaf4c0c9
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Mar 23 22:01:37 2017 +0000
+
+    Completing loading now.
+
+commit ba469625fb3ab13f12219f52fec539e9ea67ef77
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Mar 22 21:45:45 2017 +0000
+
+    More saving.
+
+commit a915a186ba13fd88b9412453b9d1d32794817ba6
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Mar 20 21:58:51 2017 +0000
+
+    Starting to square away saving.
+
+commit 287806a1cea9aef8e405604f6621948de05ef1c7
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Mar 16 22:22:50 2017 +0000
+
+    Bug fixes.
+
+commit b2c0f800eec73f06269835b435bf6ee40697f69b
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Mar 15 20:55:03 2017 +0000
+
+    Interception & loots.
+
+commit 80527ba7d352721cda3de4ab76e737c4d206b907
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Mar 14 22:13:00 2017 +0000
+
+    Interception.
+
+commit 6ac245679fa58a1d8df3bf90c0afb818bf7d989f
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Mar 9 21:30:56 2017 +0000
+
+    Sound improvements.
+
+commit 29464f2953f73b901239897493debdb648a8eb0c
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Mar 6 20:25:53 2017 +0000
+
+    Missile attack test.
+
+commit 566ed919cfe16a8759ac2ffafde0296bbb85fb40
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Mar 2 20:59:42 2017 +0000
+
+    Interceptor targetting stuff in progress.
+
+commit de49cb0b34e3ee2fdf8d1382fb3b7570658c1e4e
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Feb 28 21:30:49 2017 +0000
+
+    Player view stuff and sounds.
+
+commit 4788ecb1fb5b051a8146d322e6825dd9bd17ab3e
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Feb 27 21:34:07 2017 +0000
+
+    Missile & Interceptor targetting and launching in progress.
+
+commit 1f418fecd9e17f8a8ff08402894b5441d3872a51
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Feb 23 22:32:08 2017 +0000
+
+    Missile & Interceptor targetting and launching in progress.
+
+commit 21b7401cc43e9a35fe10c3d84a0987d196de97f9
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Feb 22 22:48:49 2017 +0000
+
+    Missile & Interceptor launching.
+
+commit dd8ae940e3bcb278d603a90af821b0c61ebb4c07
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Feb 20 23:21:42 2017 +0000
+
+    Selling continued.
+
+commit d9eb6095b55ec43a808db86ec3be9b10c430d849
+Author: git <git@byrecottage.duckdns.org>
+Date:   Mon Feb 20 22:21:18 2017 +0000
+
+    Structure selling.
+
+commit 399013bc4734a7db9467087245f4fe1d4d675437
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Feb 13 22:27:48 2017 +0000
+
+    Interceptor stuff (as per recent missile developments).
+
+commit 48cd522b6c4696dd13c70ebd682432ba4b656ad4
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Feb 12 22:26:25 2017 +0000
+
+    Slot upgrades on player's missiles.
+
+commit 298962f539b8a32da98665ffd33b5ad87e5f7d74
+Author: git <git@byrecottage.duckdns.org>
+Date:   Sat Feb 11 21:52:21 2017 +0000
+
+    Missile & Interceptor purchasing.
+
+commit 3e01089bd9657d289b50ece201196678987c9ccd
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Feb 8 21:47:56 2017 +0000
+
+    Basic player missile system functionality achieved.
+
+commit b6367c68f7368942e647505b45a6691c23946137
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Feb 7 22:20:41 2017 +0000
+
+    In development.
+
+commit 09af7e8b42ac56aa33dc4fc1e20045b7e524f763
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Feb 6 22:40:35 2017 +0000
+
+    In development.
+
+commit 1b3997d8de20f1ad779ef188c65c3b5626075b29
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Feb 2 22:03:05 2017 +0000
+
+    In development.
+
+commit 2a9cc046251530a80e67705ac4012ba7ba02ebb1
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Jan 26 22:45:09 2017 +0000
+
+    In development (player constructor now adds missile and interceptor systems).
+
+commit 3a9e9654ccebb334335e555bde404e8e518090a1
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Jan 25 21:55:50 2017 +0000
+
+    In development (Missile system purchasing).
+
+commit e47f463e87ea31f07a234a293c6251287bfd37ce
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Jan 16 22:03:54 2017 +0000
+
+    In development (Basic respawning done).
+
+commit a33162e9ffff46161d8637d9742ae302bb756367
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Dec 28 23:12:58 2016 +0000
+
+    In development (for entity views).
+
+commit 51ddcaa4e2b5a0749213fa8e578b25f400e50ebb
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Dec 28 14:43:25 2016 +0000
+
+    In development (for entity views).
+
+commit fffcf410f69b9b431c32c3f75abf5b49b49d9194
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Dec 27 21:23:13 2016 +0000
+
+    In development (session object stuff).
+
+commit 8611758e6dfab26cb9e55b5f6a61e7b359ede558
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Dec 22 20:43:48 2016 +0000
+
+    In development (login changes).
+
+commit ee40d5837e12113b3769452d37f55d9bee9b9d48
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Dec 18 21:09:35 2016 +0000
+
+    In development (login changes).
+
+commit 1b35dd2310872b002297b1496d5f2db3d08fcb7f
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Dec 13 21:33:50 2016 +0000
+
+    In development (login changes).
+
+commit fc50860c680a9bad05abc71c0e7a3813b369e162
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Dec 12 22:09:13 2016 +0000
+
+    In development (IMEI change).
+
+commit 02809f7be6a87b9394279273e7f6f93c33a65386
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Dec 8 21:31:05 2016 +0000
+
+    In development (supporting IMEI change).
+
+commit 1bf0b02d4a3eb26c0280bbf9cdba837c00b320bd
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Dec 7 22:02:31 2016 +0000
+
+    In development (for entity views).
+
+commit b464e72f56a927e6c713b08a40b661ae8c10ef39
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Dec 6 21:29:21 2016 +0000
+
+    In development (for entity views).
+
+commit 42d6012f4726a09285601a6073dfb57ab662bab8
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Dec 5 20:45:35 2016 +0000
+
+    In development (structures).
+
+commit c780e6feb205696a9ef0c3bcaec2d11c4eaaafa9
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Thu Dec 1 22:39:40 2016 +0000
+
+    In development (structures).
+
+commit bd809c42e5d8b5c09739405ef735b55582c78b38
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Nov 27 22:41:24 2016 +0000
+
+    In development (removing entities on client).
+
+commit aa1b2084d0ba77dd4db8302751244e1a7c8cb52e
+Author: Wilson Toby (ETAS/ESW6) <wit1yok@bosch.com>
+Date:   Sat Nov 26 22:13:45 2016 +0100
+
+    In development (Bochum).
+
+commit 3112bba12dc6c0117f7bde2fdd4c899ac8967ffb
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sat Nov 19 22:50:43 2016 +0000
+
+    In progress.
+
+commit fe4bdcd482d3d6efa7efafa2f49805a86ebf0b0f
+Author: Wilson Toby (ETAS/ESW6) <wit1yok@bosch.com>
+Date:   Sat Nov 19 21:56:04 2016 +0000
+
+    In development (Stuttgart/plane/train)
+
+commit 321398f7e062f3248253964953be74925caadc61
+Author: WIT1YOK <WIT1YOK@YOKZ0085.gtl.emea.bosch.com>
+Date:   Wed Nov 16 22:39:24 2016 +0100
+
+    In Development (Stuttgart).
+
+commit 01453283b9d274ea75d8a13972e90510e4288337
+Author: Wilson Toby (ETAS/ESW6) <wit1yok@bosch.com>
+Date:   Wed Nov 16 21:51:18 2016 +0100
+
+    In Development (Stuttgart)
+
+commit c594b1ee955fe8e9a4160326139bf3a9e313363d
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Nov 2 21:48:27 2016 +0000
+
+    In progress.
+
+commit 56b4db65d1ab74f129cfe8d9c75bfaac53d965a2
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Nov 1 22:01:27 2016 +0000
+
+    In progress.
+
+commit 8aae044f54a66b2d9def0831e5cc857eeb95fc51
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Oct 25 23:22:41 2016 +0100
+
+    In progress.
+
+commit 00c707c4e25e0b762a1c019107d157b3cfc340f7
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Fri Oct 21 14:41:11 2016 +0100
+
+    In progress.
+
+commit cd1f91a2f97581f870c827e86786b14941b95173
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Fri Oct 21 00:53:38 2016 +0100
+
+    In progress.
+
+commit 71c9df4d80a500b581de09476172ca8f797637a0
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Tue Oct 18 23:52:56 2016 +0100
+
+    In progress.
+
+commit c97711e24a389adcb751435d07c174de2247e134
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Oct 16 23:00:06 2016 +0100
+
+    In progress.
+
+commit 36649f6aa52d58c5ebae5f6d3fd580adcfc8c54a
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Oct 12 22:36:10 2016 +0100
+
+    In progress.
+
+commit 63355e8564cba3d31adb1d39ec16d47289bbe864
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Mon Sep 26 23:52:13 2016 +0100
+
+    In progress
+
+commit 490e5e3de20584c55dcf8b0f44015110ffae8d38
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sun Aug 14 13:54:23 2016 +0100
+
+    Pre major overhaul
+
+commit 8130f1be3d1ecfac6351f9cd4b387933b03de077
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Wed Aug 3 22:55:36 2016 +0100
+
+    In Development
+
+commit 31378340b7f1f7fd4195055add2bf4bbe2219d7b
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sat Jul 30 15:24:32 2016 +0100
+
+    Added files.
+
+commit 3c86cf7e054b6e8ebeb9c367e0060621e31965be
+Author: Toby Wilson <Tobster86@gmail.com>
+Date:   Sat Jul 30 15:15:15 2016 +0100
+
+    first commit

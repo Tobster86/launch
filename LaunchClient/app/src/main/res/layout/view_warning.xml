@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/SelectListSpacing"
+              android:background="@drawable/detail_button">
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgType"
+        android:layout_margin="@dimen/ButtonEdgePadding"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/lytText"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Such and such is doing something or other"
+            android:id="@+id/txtWarning"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="And it will take yay long"
+            android:id="@+id/txtThreatTime"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgDoer"
+        android:layout_margin="@dimen/ButtonEdgePadding"
+        />
+</LinearLayout>

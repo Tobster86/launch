@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <PoisonedIPs/>
+    <Emulators/>
+    <MultiAccountors>
+        <MultiAccountor Name="com.lbe.parallel.intl"/>
+    </MultiAccountors>
+    <SpoofApps>
+        <SpoofApp Name="com.lexa.fakegps"/>
+    </SpoofApps>
+    <Users>
+        <User Name="Adam Min">
+            <IMEI>14BDCD6FD64180AF5E7791DF91B6AF8E9A3E7BC844997EB8C29252706DF97CA5</IMEI>
+            <PlayerID>0</PlayerID>
+            <LocationSpoofCount>9</LocationSpoofCount>
+            <IMEISpoofCount>0</IMEISpoofCount>
+            <Locked>false</Locked>
+            <Poisoned>false</Poisoned>
+        </User>
+        <User Name="Phoney">
+            <IMEI>BD598233EE13277CE64D0B359FD2FF88FEE96EFD299B69D699BB20C8B942AD3B</IMEI>
+            <PlayerID>1</PlayerID>
+            <LocationSpoofCount>0</LocationSpoofCount>
+            <IMEISpoofCount>0</IMEISpoofCount>
+            <Locked>false</Locked>
+            <Poisoned>false</Poisoned>
+        </User>
+    </Users>
+    <Alliances/>
+    <Wars/>
+    <Players>
+        <Player ID="0" Name="Adam Min">
+            <Position>
+                <Latitude>53.5773</Latitude>
+                <Longitude>-1.59344</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>8776</Wealth>
+            <Points>50</Points>
+            <LastSeen>1529869475959</LastSeen>
+            <StateChange>159855000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>17</Flags1>
+            <Flags2>2</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>6</SlotCount>
+                <Slots>
+                    <Slot Number="0" PrepTime="0" Type="40"/>
+                    <Slot Number="2" PrepTime="0" Type="40"/>
+                    <Slot Number="3" PrepTime="0" Type="40"/>
+                    <Slot Number="4" PrepTime="0" Type="40"/>
+                    <Slot Number="5" PrepTime="0" Type="40"/>
+                </Slots>
+            </InterceptorSystem>
+        </Player>
+        <Player ID="1" Name="Phoney">
+            <Position>
+                <Latitude>54.24822</Latitude>
+                <Longitude>-1.16987</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>9375</Wealth>
+            <Points>0</Points>
+            <LastSeen>1529869472443</LastSeen>
+            <StateChange>160947000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>25</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>6</SlotCount>
+                <Slots/>
+            </InterceptorSystem>
+            <MissileSystem>
+                <ReloadRemaining>115000</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots>
+                    <Slot Number="2" PrepTime="0" Type="11"/>
+                </Slots>
+            </MissileSystem>
+        </Player>
+    </Players>
+    <Missiles>
+        <Missile ID="0">
+            <Position>
+                <Latitude>54.22985</Latitude>
+                <Longitude>-1.1761355</Longitude>
+            </Position>
+            <Type>11</Type>
+            <OwnerID>1</OwnerID>
+            <Tracking>false</Tracking>
+            <Target>
+                <Latitude>53.27734</Latitude>
+                <Longitude>-1.4934434</Longitude>
+            </Target>
+            <TargetID>0</TargetID>
+        </Missile>
+    </Missiles>
+    <Interceptors/>
+    <MissileSites>
+        <MissileSite ID="0">
+            <Position>
+                <Latitude>53.27734</Latitude>
+                <Longitude>-1.4934434</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>0</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>false</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots>
+                    <Slot Number="1" PrepTime="0" Type="11"/>
+                    <Slot Number="2" PrepTime="0" Type="11"/>
+                </Slots>
+            </MissileSystem>
+            <ChargeOwnerTime>2693000</ChargeOwnerTime>
+        </MissileSite>
+    </MissileSites>
+    <SAMSites/>
+    <Loots/>
+    <Radiations/>
+</Game>

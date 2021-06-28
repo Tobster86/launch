@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/PanelTransparency"
+        >
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:layout_marginTop="@dimen/MainViewSideMargin"
+            android:gravity="center"
+            android:text="@string/create_alliance"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/SeparatorThickness"
+            android:background="?attr/ButtonEdgeColour"
+            android:layout_marginTop="@dimen/SeperatorMargins"
+            android:layout_marginBottom="@dimen/SeperatorMargins"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/alliance_creation"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAvatar"
+                android:clickable="true"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgAvatar"
+                    android:src="@drawable/marker_player"
+                    android:background="@drawable/text_button_normal"
+                    android:padding="@dimen/ButtonImagePadding"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtName"
+                android:hint="@string/alliance_name"
+                android:background="@drawable/edittext_background"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:maxLength="32"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:inputType="textCapWords"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+            android:hint="@string/alliance_description"
+            android:background="@drawable/edittext_background"
+            android:layout_margin="@dimen/MainViewSideMargin"
+            android:maxLength="140"
+            android:layout_gravity="center"
+            android:maxLines="5"
+            android:inputType="textCapSentences"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/MainViewSideMargin"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_button_normal"
+                        android:padding="@dimen/ButtonImagePadding"
+                        android:src="@drawable/button_alliance_create"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/text_button_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ButtonHeight"
+        android:text="@string/close"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"
+        android:clickable="true"
+        android:onClick="ReturnToMainView"
+        android:layout_marginBottom="@dimen/MainViewSpacing"
+        android:layout_weight="1"/>
+</FrameLayout>

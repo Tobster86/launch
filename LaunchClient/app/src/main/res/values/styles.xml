@@ -1,0 +1,169 @@
+<resources>
+    <dimen name="ButtonInset">6dp</dimen>
+    <dimen name="TopViewHeight">64dp</dimen>
+    <dimen name="ReallyBigText">50dp</dimen>
+    <dimen name="BevelInset">3dp</dimen>
+    <dimen name="BevelEdge">5dp</dimen>
+    <dimen name="BevelRadius">5dp</dimen>
+    <dimen name="BevelBlend">1dp</dimen>
+    <dimen name="BevelTotal">8dp</dimen>
+    <dimen name="ButtonEdgeWidth">2dp</dimen>
+    <dimen name="ButtonEdgePadding">4dp</dimen>
+    <dimen name="ButtonHeight">48dp</dimen>
+    <dimen name="MainViewSpacing">8dp</dimen>
+    <dimen name="MainViewSideMargin">16dp</dimen>
+    <dimen name="HorizontalSpacing">8dp</dimen>
+    <dimen name="MainViewBottomMargin">32dp</dimen>
+    <dimen name="TextViewTextHeight">31dp</dimen>
+    <dimen name="TextViewHeight">32dp</dimen>
+    <dimen name="CheckBoxBorderWidth">1dp</dimen>
+    <dimen name="CheckBoxSize">24dp</dimen>
+    <dimen name="CheckBoxSpaceToText">8dp</dimen>
+    <dimen name="CloseButtonSize">32dp</dimen>
+    <dimen name="CloseButtonBorderWidth">2dp</dimen>
+    <dimen name="SmallButtonSize">32dp</dimen>
+    <dimen name="MediumButtonSize">48dp</dimen>
+    <dimen name="PlayerInfoIconSize">64dp</dimen>
+    <dimen name="SeparatorThickness">2dp</dimen>
+    <dimen name="SeperatorMargins">8dp</dimen>
+    <dimen name="SeekBarSize">3dp</dimen>
+    <dimen name="SelectListSpacing">8dp</dimen>
+    <dimen name="ButtonImagePadding">10dp</dimen>
+    <dimen name="ButtonImagePaddingNarrow">3dp</dimen>
+    <dimen name="ButtonSpacingNarrow">2dp</dimen>
+    <dimen name="SmallButtonImagePadding">5dp</dimen>
+    <dimen name="Overscroll">32dp</dimen>
+    <dimen name="KeyboardOverscroll">200dp</dimen>
+
+    <integer name="MiddleViewWeightNormal">5</integer>
+    <integer name="MiddleViewWeightCollapsed">0</integer>
+    <integer name="BottomViewWeight">4</integer>
+
+    <attr name="MainUIColour" format="color" />
+    <attr name="ScrollBarColour" format="color" />
+    <attr name="AltUIColour" format="color" />
+    <attr name="GoodColour" format="color" />
+    <attr name="WarningColour" format="color" />
+    <attr name="BadColour" format="color" />
+    <attr name="InfoColour" format="color" />
+    <attr name="ViewBevelColour" format="color" />
+    <attr name="ViewBevelDarkColour" format="color" />
+    <attr name="ViewBevelLightColour" format="color" />
+    <attr name="ViewBevelBlendColour" format="color" />
+    <attr name="BackgroundColour" format="color" />
+    <attr name="TransparentColour" format="color" />
+    <attr name="ButtonEdgeColour" format="color" />
+    <attr name="ButtonTransparency" format="color" />
+    <attr name="FrameColour" format="color" />
+    <attr name="ButtonRedColour" format="color" />
+    <attr name="ButtonYellowColour" format="color" />
+    <attr name="ButtonGreenColour" format="color" />
+    <attr name="ButtonDisabledEdgeColour" format="color" />
+    <attr name="ButtonDisabledColour" format="color" />
+    <attr name="ButtonInformationColour" format="color" />
+    <attr name="DetailButtonColour" format="color" />
+    <attr name="PanelTransparency" format="color" />
+    <attr name="LightTransparency" format="color" />
+    <attr name="LightNegativeTransparency" format="color" />
+    <attr name="LightPositiveTransparency" format="color" />
+    <attr name="LightInformationTransparency" format="color" />
+    <attr name="TextViewBackgroundColour" format="color" />
+    <attr name="SystemBackgroundColour" format="color" />
+    <attr name="EnemyBackgroundColour" format="color" />
+    <attr name="MissilePathColour" format="color" />
+    <attr name="MissilePathTrackingColour" format="color" />
+    <attr name="InterceptorPathColour" format="color" />
+    <attr name="LootRadiusColour" format="color" />
+    <attr name="StructureSeparationRadiusColour" format="color" />
+    <attr name="RepairRadiusColour" format="color" />
+    <attr name="OreRadiusColour" format="color" />
+    <attr name="RadiationColour" format="color" />
+    <attr name="BlastRadiusColour" format="color" />
+    <attr name="BlastRadiusStageColour" format="color" />
+    <attr name="EMPColour" format="color" />
+    <attr name="PrivacyZoneColour" format="color" />
+    <attr name="PrivacyZoneSelectedColour" format="color" />
+
+    <attr name="ButtonDrawableNormal" format="reference" />
+    <attr name="ButtonDrawableRed" format="reference" />
+    <attr name="ButtonDrawableGreen" format="reference" />
+    <attr name="ButtonDrawableYellow" format="reference" />
+    <attr name="ButtonDrawableHighlighted" format="reference" />
+    <attr name="DetailButtonDrawableNormal" format="reference" />
+    <attr name="DetailButtonDrawableHighlighted" format="reference" />
+    <attr name="DetailButtonDrawableDisabled" format="reference" />
+
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar">
+        <item name="ButtonDrawableNormal">@drawable/text_button_normal</item>
+        <item name="ButtonDrawableRed">@drawable/text_button_red</item>
+        <item name="ButtonDrawableGreen">@drawable/text_button_green</item>
+        <item name="ButtonDrawableYellow">@drawable/text_button_yellow</item>
+        <item name="DetailButtonDrawableNormal">@drawable/detail_button</item>
+        <item name="DetailButtonDrawableHighlighted">@drawable/detail_button_highlighted</item>
+        <item name="DetailButtonDrawableDisabled">@drawable/detail_button_disabled</item>
+
+        <item name="MainUIColour">#00ff00</item>
+        <item name="ScrollBarColour">#8000ff00</item>
+        <item name="AltUIColour">#ff0000</item>
+        <item name="GoodColour">#00ff00</item>
+        <item name="WarningColour">#ffff00</item>
+        <item name="BadColour">#ff0000</item>
+        <item name="InfoColour">#0000ff</item>
+        <item name="ViewBevelColour">#ff004f4f</item>
+        <item name="ViewBevelDarkColour">#3f000000</item>
+        <item name="ViewBevelLightColour">#3fffffff</item>
+        <item name="ViewBevelBlendColour">#7f004f4f</item>
+        <item name="BackgroundColour">#000000</item>
+        <item name="TransparentColour">#00ffffff</item>
+        <item name="ButtonEdgeColour">#ff00cf00</item>
+        <item name="ButtonTransparency">#A0000000</item>
+        <item name="FrameColour">#ff0000cf</item>
+        <item name="ButtonRedColour">#ffef0000</item>
+        <item name="ButtonYellowColour">#ffefef00</item>
+        <item name="ButtonGreenColour">#ff00cf00</item>
+        <item name="ButtonDisabledEdgeColour">#ffcf0000</item>
+        <item name="ButtonDisabledColour">#ff2f0000</item>
+        <item name="ButtonInformationColour">#ff0000ef</item>
+        <item name="DetailButtonColour">#ff001f00</item>
+        <item name="PanelTransparency">#80000000</item>
+        <item name="LightTransparency">#40000000</item>
+        <item name="LightNegativeTransparency">#40800000</item>
+        <item name="LightPositiveTransparency">#40008000</item>
+        <item name="LightInformationTransparency">#40000080</item>
+        <item name="TextViewBackgroundColour">#80003f00</item>
+        <item name="SystemBackgroundColour">#80003f00</item>
+        <item name="EnemyBackgroundColour">#803f0000</item>
+        <item name="MissilePathColour">#ffff0000</item>
+        <item name="MissilePathTrackingColour">#ffff7f00</item>
+        <item name="InterceptorPathColour">#ff0000ff</item>
+        <item name="LootRadiusColour">#3f00ff00</item>
+        <item name="StructureSeparationRadiusColour">#ff7f7f7f</item>
+        <item name="RepairRadiusColour">#7f7f7f7f</item>
+        <item name="OreRadiusColour">#3fffff00</item>
+        <item name="RadiationColour">#19000000</item>
+        <item name="BlastRadiusColour">#3fff0000</item>
+        <item name="BlastRadiusStageColour">#14ff0000</item>
+        <item name="EMPColour">#1f0000ff</item>
+        <item name="PrivacyZoneColour">#7f007fff</item>
+        <item name="PrivacyZoneSelectedColour">#7f00007f</item>
+
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">?attr/BackgroundColour</item>
+        <item name="android:textColor">?attr/MainUIColour</item>
+        <item name="android:textColorHint">?attr/MainUIColour</item>
+        <item name="android:editTextColor">?attr/MainUIColour</item>
+    </style>
+
+    <style name="LaunchTheme" parent="AppTheme">
+        <!-- The main Launch theme. To change the colour of items, copy and paste them from AppTheme (above) into here, and give them new values. -->
+        <item name="MainUIColour">#2bff00</item>
+        <item name="ScrollBarColour">#8000ff00</item>
+        <item name="AltUIColour">#ff0000</item>
+        <item name="GoodColour">#49ff29</item>
+        <item name="WarningColour">#ffff00</item>
+        <item name="BadColour">#ff0000</item>
+        <item name="InfoColour">#ffea00</item>
+        <item name="EMPColour">#1fff00ff</item>
+    </style>
+
+</resources>

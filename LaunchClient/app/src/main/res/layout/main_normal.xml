@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lytMain">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_button_normal"
+            android:id="@+id/lytTop">
+
+            <LinearLayout
+                android:id="@+id/lytMoneyPoints"
+                android:background="@drawable/text_button_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ButtonEdgePadding"
+                    android:layout_marginLeft="@dimen/ButtonEdgePadding"
+                    android:maxLines="1"
+                    android:text="Money"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytHealth"
+                android:background="@drawable/text_button_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ButtonEdgePadding"
+                    android:layout_marginLeft="@dimen/ButtonEdgePadding"
+                    android:maxLines="1"
+                    android:text="Health"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtHealthChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ButtonEdgePadding"
+                    android:layout_marginLeft="@dimen/ButtonEdgePadding"
+                    android:maxLines="1"
+                    android:text="HPChange"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytGPSSig"
+                android:background="@drawable/text_button_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ButtonEdgePadding"
+                    android:layout_marginLeft="@dimen/ButtonEdgePadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgGPS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/button_location"/>
+
+                    <TextView
+                        android:id="@+id/txtGPS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:text="GPS"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ButtonEdgePadding"
+                    android:layout_marginLeft="@dimen/ButtonEdgePadding"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgSignal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/button_signal"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtSignal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:text="Sig"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgMapToolsShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/MainViewSpacing"
+                android:src="@drawable/button_map_tools_show" />
+
+            <ImageView
+                android:id="@+id/imgMapToolsHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/button_map_tools_hide"
+                android:layout_marginRight="@dimen/MainViewSpacing"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDebug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="DEBUG"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="?attr/BadColour"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/MiddleViewWeightNormal"
+            android:id="@+id/lytEmpty">
+
+            <LinearLayout
+                android:id="@+id/lytOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPrivacyZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/MainViewSideMargin"
+                    android:text="@string/privacy_in_zone"
+                    android:textColor="?attr/InfoColour"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/MainViewSideMargin"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="?attr/InfoColour"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/imgRadiation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/radiation_trefoil"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtEvent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?attr/InfoColour"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtEvent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?attr/InfoColour"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtEvent3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?attr/InfoColour"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:background="@drawable/text_button_normal"
+                    android:id="@+id/btnRespawn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:onClick="ButtonRespawn"
+                    android:padding="@dimen/ButtonImagePadding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_respawn"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/lytMapTools"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:background="@drawable/text_button_normal"
+                android:scrollbarThumbVertical="?attr/ScrollBarColour"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="@dimen/MediumButtonSize"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/MainViewSpacing"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgSelect"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_select"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgZoom"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_zoom"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SeparatorThickness"
+                        android:background="?attr/FrameColour"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowNeutral"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_neutral"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowFriendly"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_affiliate"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowEnemy"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_war"
+                        android:tintMode="src_over"/>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/SeparatorThickness"
+                        android:background="?attr/FrameColour"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowPlayers"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_players"
+                        android:focusableInTouchMode="false"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowMissileSites"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_missile_sites"
+                        android:focusableInTouchMode="false"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowSAMSites"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_sam_sites"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowMissiles"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_missiles"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowInterceptors"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_interceptors"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowSentryGuns"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_sentry_guns"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowOreMines"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_ore_mines"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowLoots"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_loots"
+                        android:tintMode="src_over"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/SeparatorThickness"
+                        android:background="?attr/FrameColour"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowMap"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_map"
+                        android:tintMode="src_over"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/MediumButtonSize"
+                        android:layout_height="@dimen/MediumButtonSize"
+                        android:id="@+id/imgShowSatellite"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/view_satellite"
+                        android:tintMode="src_over"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/BottomViewWeight"
+            android:id="@+id/lytBottom">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,106 @@
+Immediate TO DO for new version (ignore everything else for now):
+-Auto backups, not just save.
+-Wealth auto generation.
+-Health auto generation.
+-Costable repairs.
+-Costable health regeneration.
+-Manual (geolocation) repairs.
+
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------
+TEST PLAN
+---------
+
+-----
+DOING
+-----
+Canid default.
+New dialogs.
+Notification comms error irritation.
+Mutex on entities and new entity lists.
+Improved top bar UI.
+
+----
+BUGS
+----
+Concurrency exception on Missiles container.
+
+-----
+MINOR
+-----
+Multiple missile targetting and synced/timed launches.
+Server information & rules, with echo on server terminal for verification.
+Rotate avatars.
+Don't let players buy ore mines without enough money.
+Threat time calculations wrong (showing equivelant time to entity, not target location).
+UI issues when surfacing (don't allow access to underground menu).
+Make Canids the default interceptor batteries are loaded with, not Ludos (first non-shoulder-launchable).
+Give choice of structure names, and move them to the main build screen.
+"An activation code will be sent to your e-mail address".
+
+-----
+MAJOR
+-----
+Radiation/nuclear missiles.
+Seperate notification for nuclear missiles.
+Renamable structures and nameable ore mines.
+Ability to decomission missiles.
+Ability of players to die and respawn after a certain amount of damage.
+Name changing.
+Bombs, instead of current sabotage mode.
+"Player of the week", with star icon.
+Min ore value/generation time.
+
+-----
+OTHER
+-----
+Ability to kick players.
+Max player cap.
+VIP e-mail list (bypasses max player cap).
+Banned e-mail list.
+
+-----
+MAYBE
+-----
+Damage/HP on structures, with 'GO TO' to repair?
+Server performance metrics etc.
+Enable/disable sounds option.
+Hook into volume control stream so the volume of game sounds can be changed at any time (try it again; had UI issues last time but they persisted after removing it).
+Survivability and attack success probability information / missile vs battery statistics.
+Use Fused Location Provider instead of Location Manager.
+Google Service API required message/handling?
+Player screen sort choice.
+Manual control of interceptor batteries.
+'Fire & forget' mode for batteries.
+Intelligent protection for batteries.
+Diplomacy, with sharing battery features.
+AI's to target ore mines.
+Make stuff take longer and generally be more disrupted in radioactive areas.
+Login with Google & Facebook.

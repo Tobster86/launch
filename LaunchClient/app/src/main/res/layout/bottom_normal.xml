@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnBuild"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_build"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:onClick="ButtonBuild"/>
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnUpdate"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_missiles"
+            android:onClick="ButtonMissiles"/>
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnSabotage"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_interceptors"
+            android:onClick="ButtonInterceptors"
+            />
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnDiplomacy"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_diplomacy"
+            android:onClick="ButtonDiplomacy"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnReports"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_reports"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:onClick="ButtonReports"
+            />
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnWarnings"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_threats"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:onClick="ButtonWarnings"
+            />
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnPlayers"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_players"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:onClick="ButtonPlayers"
+            />
+
+        <ImageView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnSettings"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/ButtonImagePadding"
+            android:src="@drawable/button_settings"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/ButtonImagePadding"
+            android:onClick="ButtonSettings"
+            />
+
+    </LinearLayout>
+</LinearLayout>

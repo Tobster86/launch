@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <Port>30069</Port>
+    <ServerEmail>Tobster86@gmail.com</ServerEmail>
+    <DebugFlags>1</DebugFlags>
+    <StartingWealth>10000</StartingWealth>
+    <RespawnWealth>0</RespawnWealth>
+    <RespawnTime>3600000</RespawnTime>
+    <RespawnProtectionTime>172800000</RespawnProtectionTime>
+    <NoobProtectionTime>1209600000</NoobProtectionTime>
+    <HourlyWealth>350</HourlyWealth>
+    <CMSSystemCost>600</CMSSystemCost>
+    <SAMSystemCost>400</SAMSystemCost>
+    <CMSStructureCost>700</CMSStructureCost>
+    <NCMSStructureCost>2000</NCMSStructureCost>
+    <SAMStructureCost>500</SAMStructureCost>
+    <SentryGunStructureCost>350</SentryGunStructureCost>
+    <OreMineStructureCost>800</OreMineStructureCost>
+    <InterceptorBaseHitChance>0.6</InterceptorBaseHitChance>
+    <RubbleMinValue>0.4</RubbleMinValue>
+    <RubbleMaxValue>0.7</RubbleMaxValue>
+    <RubbleMinTime>172800000</RubbleMinTime>
+    <RubbleMaxTime>432000000</RubbleMaxTime>
+    <StructureSeparation>0.1</StructureSeparation>
+    <PlayerBaseHP>200</PlayerBaseHP>
+    <StructureBaseHP>100</StructureBaseHP>
+    <StructureBootTime>1800000</StructureBootTime>
+    <InitialCMSSlots>3</InitialCMSSlots>
+    <InitialSAMSlots>6</InitialSAMSlots>
+    <RequiredAccuracy>0.25</RequiredAccuracy>
+    <MaxRadiationTime>259200000</MaxRadiationTime>
+    <MinRadiationTime>86400000</MinRadiationTime>
+    <MissileSlotUpgradeBaseCost>500</MissileSlotUpgradeBaseCost>
+    <MissileSlotUpgradeCount>3</MissileSlotUpgradeCount>
+    <ResaleValue>0.5</ResaleValue>
+    <DecommissionTime>1800000</DecommissionTime>
+    <ReloadTimeBase>120000</ReloadTimeBase>
+    <ReloadTimeStage1>60000</ReloadTimeStage1>
+    <ReloadTimeStage2>30000</ReloadTimeStage2>
+    <ReloadTimeStage3>15000</ReloadTimeStage3>
+    <ReloadStage1Cost>500</ReloadStage1Cost>
+    <ReloadStage2Cost>1000</ReloadStage2Cost>
+    <ReloadStage3Cost>2000</ReloadStage3Cost>
+    <RepairSalvageDistance>0.1</RepairSalvageDistance>
+    <MissileSiteMaintenanceCost>25</MissileSiteMaintenanceCost>
+    <SAMSiteMaintenanceCost>15</SAMSiteMaintenanceCost>
+    <SentryGunMaintenanceCost>10</SentryGunMaintenanceCost>
+    <OreMineMaintenanceCost>5</OreMineMaintenanceCost>
+    <ChampionPrize>10000</ChampionPrize>
+    <VeteranPrizeMax>5000</VeteranPrizeMax>
+    <VeteranPrizeMin>500</VeteranPrizeMin>
+    <PointMultiplierFriendlyFire>-2</PointMultiplierFriendlyFire>
+    <PointsPerDamageHP>1.0</PointsPerDamageHP>
+    <PointsThreatManuallyIntercepted>50</PointsThreatManuallyIntercepted>
+    <PointsLootCollected>25</PointsLootCollected>
+    <PointsPlayerKilled>1000</PointsPlayerKilled>
+    <PointsStructureDestroyed>500</PointsStructureDestroyed>
+    <PointsDying>-500</PointsDying>
+    <HealthInterval>900000</HealthInterval>
+    <RadiationInterval>360000</RadiationInterval>
+    <PlayerRepairCost>15</PlayerRepairCost>
+    <StructureRepairCost>10</StructureRepairCost>
+    <AWOLTime>604800000</AWOLTime>
+    <RemoveTime>1209600000</RemoveTime>
+    <NukeUpgradeCost>1500</NukeUpgradeCost>
+    <AllianceCooloffTime>43200000</AllianceCooloffTime>
+    <MissileNuclearCost>450</MissileNuclearCost>
+    <MissileTrackingCost>150</MissileTrackingCost>
+    <MissileECMCost>200</MissileECMCost>
+    <EMPChance>0.5</EMPChance>
+    <EMPRadiusMultiplier>10</EMPRadiusMultiplier>
+    <ECMInterceptorChanceReduction>0.2</ECMInterceptorChanceReduction>
+    <ManualInterceptorChanceIncrease>0.15</ManualInterceptorChanceIncrease>
+    <SentryGunReloadTime>3000</SentryGunReloadTime>
+    <SentryGunRange>1.0</SentryGunRange>
+    <SentryGunHitChance>0.3</SentryGunHitChance>
+    <OreMineRadius>2.0</OreMineRadius>
+    <MaxOreValue>1500</MaxOreValue>
+    <OreMineGenerateTime>3600000</OreMineGenerateTime>
+    <OreMinExpiry>14400000</OreMinExpiry>
+    <OreMaxExpiry>57600000</OreMaxExpiry>
+    <MissileSpeedIndexCost>100</MissileSpeedIndexCost>
+    <MissileSpeedIndexCostPow>1.5</MissileSpeedIndexCostPow>
+    <MissileRangeIndexCost>50</MissileRangeIndexCost>
+    <MissileRangeIndexCostPow>1</MissileRangeIndexCostPow>
+    <MissileBlastRadiusIndexCost>50</MissileBlastRadiusIndexCost>
+    <MissileBlastRadiusIndexCostPow>1</MissileBlastRadiusIndexCostPow>
+    <NukeBlastRadiusIndexCost>300</NukeBlastRadiusIndexCost>
+    <NukeBlastRadiusIndexCostPow>1</NukeBlastRadiusIndexCostPow>
+    <MissileMaxDamageIndexCost>100</MissileMaxDamageIndexCost>
+    <MissileMaxDamageIndexCostPow>1</MissileMaxDamageIndexCostPow>
+    <InterceptorSpeedIndexCost>50</InterceptorSpeedIndexCost>
+    <InterceptorSpeedIndexCostPow>1.75</InterceptorSpeedIndexCostPow>
+    <InterceptorRangeIndexCost>50</InterceptorRangeIndexCost>
+    <InterceptorRangeIndexCostPow>1.25</InterceptorRangeIndexCostPow>
+    <MissilePrepTimePerMagnitude>2</MissilePrepTimePerMagnitude>
+    <InterceptorPrepTimePerMagnitude>2</InterceptorPrepTimePerMagnitude>
+    <HourlyBonusDiplomaticPresence>50</HourlyBonusDiplomaticPresence>
+    <HourlyBonusPoliticalEngagement>25</HourlyBonusPoliticalEngagement>
+    <HourlyBonusDefenderOfTheNation>50</HourlyBonusDefenderOfTheNation>
+    <HourlyBonusNuclearSuperpower>25</HourlyBonusNuclearSuperpower>
+    <HourlyBonusWeeklyKillsBatch>10</HourlyBonusWeeklyKillsBatch>
+    <HourlyBonusSurvivor>10</HourlyBonusSurvivor>
+    <HourlyBonusHippy>5</HourlyBonusHippy>
+    <HourlyBonusPeaceMaker>10</HourlyBonusPeaceMaker>
+    <HourlyBonusWarMonger>10</HourlyBonusWarMonger>
+    <HourlyBonusLoneWolf>20</HourlyBonusLoneWolf>
+    <LoneWolfDistance>15.0</LoneWolfDistance>
+
+    <MissileSpeeds>
+        <MissileSpeed ID="1" Speed="1500"/>
+        <MissileSpeed ID="2" Speed="2500"/>
+        <MissileSpeed ID="3" Speed="3500"/>
+    </MissileSpeeds>
+
+    <MissileRanges>
+        <MissileRange ID="1" Range="5000"/>
+        <MissileRange ID="2" Range="10000"/>
+        <MissileRange ID="3" Range="22000"/>
+    </MissileRanges>
+
+    <MissileBlastRadii>
+        <MissileBlastRadius ID="1" BlastRadius="0.1"/>
+        <MissileBlastRadius ID="2" BlastRadius="0.4"/>
+        <MissileBlastRadius ID="3" BlastRadius="1.0"/>
+    </MissileBlastRadii>
+
+    <NukeBlastRadii>
+        <NukeBlastRadius ID="1" BlastRadius="1.5"/>
+        <NukeBlastRadius ID="2" BlastRadius="5.0"/>
+        <NukeBlastRadius ID="3" BlastRadius="20.0"/>
+        <NukeBlastRadius ID="4" BlastRadius="100.0"/>
+    </NukeBlastRadii>
+
+    <MissileMaxDamages>
+        <MissileMaxDamage ID="1" MaxDamage="100"/>
+        <MissileMaxDamage ID="2" MaxDamage="250"/>
+        <MissileMaxDamage ID="3" MaxDamage="400"/>
+        <MissileMaxDamage ID="4" MaxDamage="500"/>
+    </MissileMaxDamages>
+
+    <InterceptorSpeeds>
+        <InterceptorSpeed ID="1" Speed="3000"/>
+        <InterceptorSpeed ID="2" Speed="4000"/>
+    </InterceptorSpeeds>
+
+    <InterceptorRanges>
+        <InterceptorRange ID="1" Range="10.0"/>
+        <InterceptorRange ID="2" Range="50.0"/>
+        <InterceptorRange ID="3" Range="150.0"/>
+        <InterceptorRange ID="4" Range="400.0"/>
+        <InterceptorRange ID="5" Range="1000.0"/>
+        <InterceptorRange ID="6" Range="3000.0"/>
+        <InterceptorRange ID="7" Range="8000.0"/>
+	<InterceptorRange ID="8" Range="8000.0"/>
+    </InterceptorRanges>
+
+    <MissileTypes>
+        <MissileType ID="1" Name="Shitty">
+            <Purchasable>false</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>1</BlastRadiusIndex>
+            <RangeIndex>1</RangeIndex>
+            <MaxDamageIndex>1</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>true</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="11" Name="Enyo">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>1</BlastRadiusIndex>
+            <RangeIndex>1</RangeIndex>
+            <MaxDamageIndex>1</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="21" Name="Eris">
+            <AssetID>13</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>2</BlastRadiusIndex>
+            <RangeIndex>1</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="26" Name="Daisycutter">
+            <AssetID>10</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>2</BlastRadiusIndex>
+            <RangeIndex>2</RangeIndex>
+            <MaxDamageIndex>1</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="27" Name="Lucky Strike">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>1</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>1</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="31" Name="Erebus">
+            <AssetID>7</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>2</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="35" Name="Super Erebus">
+            <AssetID>8</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>2</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>true</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="41" Name="Chaos">
+            <AssetID>9</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>2</RangeIndex>
+            <MaxDamageIndex>3</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="50" Name="Typhon">
+            <AssetID>4</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <BlastRadiusIndex>2</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="55" Name="Hunter Typhon">
+            <AssetID>3</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <BlastRadiusIndex>2</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>true</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="60" Name="Tartarus">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>3</MaxDamageIndex>
+        <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="65" Name="Hades">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>2</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="67" Name="Texan">
+            <AssetID>6</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>3</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>true</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="71" Name="Hephaestus">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <BlastRadiusIndex>1</BlastRadiusIndex>
+            <RangeIndex>2</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>true</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="80" Name="Brexit">
+            <AssetID>2</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="85" Name="An-4118">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="90" Name="Boomski">
+            <AssetID>1</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <BlastRadiusIndex>4</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="92" Name="Luna Mk1">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>4</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>true</ECM>
+        </MissileType>
+        <MissileType ID="95" Name="Surgeon">
+            <AssetID>14</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>1</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>2</MaxDamageIndex>
+            <Nuclear>false</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="100" Name="SCP-Gone">
+            <Purchasable>false</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>3</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+        <MissileType ID="105" Name="SCP-GEM">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>3</SpeedIndex>
+            <BlastRadiusIndex>2</BlastRadiusIndex>
+            <RangeIndex>3</RangeIndex>
+            <MaxDamageIndex>4</MaxDamageIndex>
+            <Nuclear>true</Nuclear>
+            <Tracking>false</Tracking>
+            <ECM>false</ECM>
+        </MissileType>
+    </MissileTypes>
+    <InterceptorTypes>
+        <InterceptorType ID="10" Name="Ludo">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>1</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="15" Name="Vespid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>1</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="17" Name="Ailurid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>2</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="20" Name="Vulpid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>2</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="25" Name="Procyonid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>3</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="27" Name="Accipitrid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>3</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="30" Name="Canid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>4</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="32" Name="Lophocyonid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>4</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="35" Name="Cathartid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>5</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="40" Name="Lupid">
+            <AssetID>11</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>5</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="45" Name="Felid">
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>6</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="50" Name="Ursid">
+            <AssetID>12</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>6</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="55" Name="Eschatol">
+            <AssetID>5</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>1</SpeedIndex>
+            <RangeIndex>7</RangeIndex>
+        </InterceptorType>
+        <InterceptorType ID="60" Name="Ragnarok">
+            <AssetID>5</AssetID>
+            <Purchasable>true</Purchasable>
+            <SpeedIndex>2</SpeedIndex>
+            <RangeIndex>8</RangeIndex>
+        </InterceptorType>
+    </InterceptorTypes>
+
+    <MajorBannedApps>
+        <MajorBannedApp Name="BlueStacks">
+            <Signature>com.uncube.account</Signature>
+            <Description>Android emulator</Description>
+        </MajorBannedApp>
+        <MajorBannedApp Name="MEmu">
+            <Signature>microvirt</Signature>
+            <Description>Android emulator</Description>
+        </MajorBannedApp>
+    </MajorBannedApps>
+
+    <MinorBannedApps>
+        <MinorBannedApp Name="Parallel Space">
+            <Signature>com.lbe.parallel.intl</Signature>
+            <Description>app cloner</Description>
+        </MinorBannedApp>
+        <MinorBannedApp Name="Parallel Space">
+            <Signature>com.parallel.space.lite</Signature>
+            <Description>app cloner</Description>
+        </MinorBannedApp>
+        <MinorBannedApp Name="App Cloner">
+            <Signature>com.applisto.appcloner</Signature>
+            <Description>self-descriptive</Description>
+        </MinorBannedApp>
+        <MinorBannedApp Name="Lexa Fake GPS">
+            <Signature>com.lexa.fakegps</Signature>
+            <Description>location spoofer</Description>
+        </MinorBannedApp>
+        <MinorBannedApp Name="Generic fake GPS">
+            <Signature>fakegps</Signature>
+            <Description>location spoofer</Description>
+        </MinorBannedApp>
+        <MinorBannedApp Name="Magisk">
+            <Signature>magisk</Signature>
+            <Description>allows location spoofing and multiaccounting</Description>
+        </MinorBannedApp>
+    </MinorBannedApps>
+</config>

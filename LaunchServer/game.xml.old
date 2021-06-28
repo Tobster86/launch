@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Bob">
+            <IMEI>3CA85CE276D04E92B61851FF3271F6E84D9DE4708B063DE52AFAE4FF845AB507</IMEI>
+            <PlayerID>0</PlayerID>
+            <Locked>false</Locked>
+            <LocationSpoofs>0</LocationSpoofs>
+        </User>
+        <User Name="Tob">
+            <IMEI>4A7254A42F7FDF3689723CCF2CC49883E4EC97622BC4315B6595206B0780E9EF</IMEI>
+            <PlayerID>1</PlayerID>
+            <Locked>false</Locked>
+            <LocationSpoofs>0</LocationSpoofs>
+        </User>
+    </Users>
+    <Alliances/>
+    <Wars/>
+    <Players>
+        <Player ID="0" Name="Bob">
+            <Position>
+                <Latitude>53.55</Latitude>
+                <Longitude>-1.1499983</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>16814</Wealth>
+            <Points>0</Points>
+            <LastSeen>1524864738503</LastSeen>
+            <StateChange>4461000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>9</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>15000</ReloadTime>
+                <SlotCount>6</SlotCount>
+                <Slots>
+                    <Slot Number="0" PrepTime="0" Type="30"/>
+                    <Slot Number="1" PrepTime="0" Type="55"/>
+                    <Slot Number="2" PrepTime="0" Type="55"/>
+                    <Slot Number="3" PrepTime="0" Type="35"/>
+                    <Slot Number="4" PrepTime="0" Type="35"/>
+                    <Slot Number="5" PrepTime="0" Type="35"/>
+                </Slots>
+            </MissileSystem>
+        </Player>
+        <Player ID="1" Name="Tob">
+            <Position>
+                <Latitude>53.55</Latitude>
+                <Longitude>-1.1499983</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>20630</Wealth>
+            <Points>0</Points>
+            <LastSeen>1523826826149</LastSeen>
+            <StateChange>65130000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>9</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots/>
+            </MissileSystem>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites>
+        <MissileSite ID="0">
+            <Position>
+                <Latitude>53.399998</Latitude>
+                <Longitude>-2.2</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>0</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>true</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>15000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots>
+                    <Slot Number="2" PrepTime="0" Type="90"/>
+                </Slots>
+            </MissileSystem>
+            <ChargeOwnerTime>879000</ChargeOwnerTime>
+        </MissileSite>
+        <MissileSite ID="1">
+            <Position>
+                <Latitude>54.3</Latitude>
+                <Longitude>-1.1</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>1</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>false</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots/>
+            </MissileSystem>
+            <ChargeOwnerTime>400000</ChargeOwnerTime>
+        </MissileSite>
+        <MissileSite ID="2">
+            <Position>
+                <Latitude>54.3</Latitude>
+                <Longitude>-1.0</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>1</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>true</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots/>
+            </MissileSystem>
+            <ChargeOwnerTime>416000</ChargeOwnerTime>
+        </MissileSite>
+    </MissileSites>
+    <SAMSites>
+        <SAMSite ID="0">
+            <Position>
+                <Latitude>54.399998</Latitude>
+                <Longitude>-1.0</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>1</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Mode>0</Mode>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>6</SlotCount>
+                <Slots>
+                    <Slot Number="1" PrepTime="0" Type="40"/>
+                    <Slot Number="2" PrepTime="0" Type="40"/>
+                    <Slot Number="3" PrepTime="0" Type="40"/>
+                    <Slot Number="4" PrepTime="0" Type="40"/>
+                    <Slot Number="5" PrepTime="0" Type="40"/>
+                </Slots>
+            </InterceptorSystem>
+            <ChargeOwnerTime>379000</ChargeOwnerTime>
+        </SAMSite>
+        <SAMSite ID="1">
+            <Position>
+                <Latitude>54.399998</Latitude>
+                <Longitude>-1.1</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>1</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Mode>0</Mode>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>6</SlotCount>
+                <Slots>
+                    <Slot Number="0" PrepTime="0" Type="40"/>
+                    <Slot Number="1" PrepTime="0" Type="40"/>
+                    <Slot Number="2" PrepTime="0" Type="40"/>
+                    <Slot Number="3" PrepTime="0" Type="40"/>
+                    <Slot Number="4" PrepTime="0" Type="40"/>
+                    <Slot Number="5" PrepTime="0" Type="40"/>
+                </Slots>
+            </InterceptorSystem>
+            <ChargeOwnerTime>390000</ChargeOwnerTime>
+        </SAMSite>
+    </SAMSites>
+    <Loots/>
+    <Radiations>
+        <Radiation ID="0">
+            <Position>
+                <Latitude>55.368683</Latitude>
+                <Longitude>-2.9250407</Longitude>
+            </Position>
+            <Radius>20.0</Radius>
+            <Expiry>205465120</Expiry>
+        </Radiation>
+    </Radiations>
+</Game>

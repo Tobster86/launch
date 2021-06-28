@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/text_button_normal">
+
+    <ImageView
+        android:id="@+id/imgLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/hi_res_logo"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgComms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/button_update"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgConstruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/button_build"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/marker_loot"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgDiplomacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/button_diplomacy"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_health"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgSAMControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/sam_mode_semi"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_gravity="center"
+        android:src="@drawable/button_online"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lytContent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:indeterminateOnly="false"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:id="@+id/txtMessage"
+            android:padding="@dimen/MainViewSpacing"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MainViewSideMargin"
+        android:layout_marginBottom="@dimen/MainViewSideMargin">
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:id="@+id/btnYes"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/dialog_yes"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:visibility="gone"/>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:id="@+id/btnOk"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/dialog_ok"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:visibility="gone"/>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:id="@+id/btnCancel"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:visibility="gone"/>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:id="@+id/btnNo"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/dialog_no"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

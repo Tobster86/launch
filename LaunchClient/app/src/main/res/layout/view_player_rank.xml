@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lytBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/SelectListSpacing"
+        android:background="@drawable/detail_button_disabled"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgPlayer"
+                android:layout_width="@dimen/PlayerInfoIconSize"
+                android:layout_height="@dimen/PlayerInfoIconSize"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ButtonEdgePadding"/>
+
+            <LinearLayout
+                android:id="@+id/lytText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/txtAlliance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Alliance"/>
+
+                <TextView
+                    android:id="@+id/txtAWOL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/CloseButtonSize"
+                    android:text="@string/awol"
+                    android:textColor="?attr/BadColour"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtMultiplier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/CloseButtonSize"
+                    android:text="x1"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgLeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:src="@drawable/icon_leader"/>
+
+            <ImageView
+                android:id="@+id/imgAlly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:src="@drawable/icon_ally"/>
+
+            <ImageView
+                android:id="@+id/imgWar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:src="@drawable/icon_war"/>
+
+            <ImageView
+                android:id="@+id/imgAffiliate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ButtonEdgePadding"
+                android:src="@drawable/icon_affiliate"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lyt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtWealthTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/SeperatorMargins"
+                    android:text="@string/wealth"/>
+
+                <TextView
+                    android:id="@+id/txtWorthTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/SeperatorMargins"
+                    android:text="@string/worth"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtWealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£xxx"
+                    android:textColor="?attr/WarningColour"/>
+
+                <TextView
+                    android:id="@+id/txtWorth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£xxx"
+                    android:textColor="?attr/WarningColour"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtOffencesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offences"/>
+
+                <TextView
+                    android:id="@+id/txtDefencesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defences"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtOffences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£xxx"
+                    android:textColor="?attr/WarningColour"/>
+
+                <TextView
+                    android:id="@+id/txtDefences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£xxx"
+                    android:textColor="?attr/WarningColour"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lytKills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtKillsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/kills"/>
+
+                <TextView
+                    android:id="@+id/txtKillsTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/WarningColour"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytDeaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDeathsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/deaths"/>
+
+                <TextView
+                    android:id="@+id/txtDeathsTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/WarningColour"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytDamageInflicted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDamageInflictedTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/damage_inflicted"/>
+
+                <TextView
+                    android:id="@+id/txtDamageInflictedTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/WarningColour"
+                    android:text="0hp"/>
+
+                <TextView
+                    android:id="@+id/txtOffenceSpendingCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/WarningColour"
+                    android:text="£0"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytDamageReceived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDamageReceivedTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/damage_received"/>
+
+                <TextView
+                    android:id="@+id/txtDamageReceivedTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/WarningColour"
+                    android:text="0hp"/>
+
+                <TextView
+                    android:id="@+id/txtDefenceSpendingCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/WarningColour"
+                    android:text="£0"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

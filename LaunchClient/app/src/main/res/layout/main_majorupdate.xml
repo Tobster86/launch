@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/PanelTransparency"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/MainViewSideMargin"
+            android:src="@drawable/hi_res_logo"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:layout_marginTop="@dimen/MainViewSideMargin"
+            android:text="@string/version_mismatch_major_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:layout_marginTop="@dimen/MainViewSideMargin"
+            android:text="@string/version_mismatch_major"
+            />
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:id="@+id/btnPlayStore"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:layout_marginTop="@dimen/MainViewSideMargin"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="ButtonPlayStore"
+            android:text="@string/play_store"/>
+    </LinearLayout>
+</FrameLayout>
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/PanelTransparency">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login_text"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TextViewHeight"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txtEmailRegister"
+        android:hint="@string/email_address"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TextViewHeight"
+        android:id="@+id/txtPlayerNameRegister"
+        android:hint="@string/player_name"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPasswordRegister"
+        android:hint="@string/password"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPasswordConfirmRegister"
+        android:hint="@string/confirm_password"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+    <com.apps.fast.launchtest.views.TextButton
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ButtonHeight"
+        android:id="@+id/btnRegister"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"
+        android:clickable="true"
+        android:text="@string/button_register"/>
+
+    <com.apps.fast.launchtest.views.TextButton
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ButtonHeight"
+        android:text="@string/cancel"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/MainViewSpacing"
+        android:layout_marginLeft="@dimen/MainViewSideMargin"
+        android:layout_marginRight="@dimen/MainViewSideMargin"
+        android:onClick="ReturnToMainView"
+        android:clickable="true"/>
+
+</LinearLayout-->

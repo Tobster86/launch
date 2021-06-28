@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <PoisonedIPs/>
+    <Emulators/>
+    <MultiAccountors>
+        <MultiAccountor Name="com.lbe.parallel.intl"/>
+    </MultiAccountors>
+    <SpoofApps>
+        <SpoofApp Name="com.lexa.fakegps"/>
+    </SpoofApps>
+    <Users>
+        <User Name="Adam Min">
+            <IMEI>14BDCD6FD64180AF5E7791DF91B6AF8E9A3E7BC844997EB8C29252706DF97CA5</IMEI>
+            <PlayerID>0</PlayerID>
+            <LocationSpoofCount>0</LocationSpoofCount>
+            <IMEISpoofCount>0</IMEISpoofCount>
+            <Locked>false</Locked>
+            <Poisoned>false</Poisoned>
+        </User>
+    </Users>
+    <Alliances/>
+    <Wars/>
+    <Players>
+        <Player ID="0" Name="Adam Min">
+            <Position>
+                <Latitude>53.55</Latitude>
+                <Longitude>-1.1499983</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>11000</Wealth>
+            <Points>0</Points>
+            <LastSeen>1528135630433</LastSeen>
+            <StateChange>172332000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>-127</Flags1>
+            <Flags2>2</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites/>
+    <SAMSites/>
+    <Loots/>
+    <Radiations/>
+</Game>

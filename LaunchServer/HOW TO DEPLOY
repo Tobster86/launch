@@ -1,0 +1,28 @@
+Bundle and send to EC2:
+cd LaunchServer/dist/
+tar -zcvf launch.tar.gz LaunchServer.jar lib/
+scp -i ../../ionos_launchserver_key launch.tar.gz root@77.68.17.204:~/launch
+
+cd to home:
+cd ../../
+
+Log into EC2:
+./TobysScripts/ionos_launchserver.sh
+
+Stop launch:
+screen -r
+quit
+ctrl-A D
+
+Unpack:
+cd launch/
+tar -zxvf launch.tar.gz
+rm launch.tar.gz
+
+Relaunch:
+screen -r
+java -jar LaunchServer.jar
+ctrl-A D
+
+exit
+exit

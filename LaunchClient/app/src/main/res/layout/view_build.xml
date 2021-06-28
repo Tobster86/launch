@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:background="?attr/PanelTransparency"
+            android:scrollbarThumbVertical="?attr/ScrollBarColour">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytActions">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/build_structures"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/MainViewSpacing"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+            <TextView
+                android:id="@+id/txtCannotBuild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"
+                android:layout_marginTop="@dimen/MainViewSpacing"
+                android:background="?attr/TextViewBackgroundColour"
+                android:text="@string/cannot_build"
+                android:textColor="?attr/BadColour"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cannot_build_ore_mine"
+                android:id="@+id/txtCannotBuildOreMine"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/MainViewSpacing"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"
+                android:textColor="?attr/BadColour"
+                android:textStyle="bold"
+                android:background="?attr/TextViewBackgroundColour"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lytNearbyStructures"
+                android:layout_marginLeft="@dimen/MainViewSideMargin"
+                android:layout_marginRight="@dimen/MainViewSideMargin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/SeparatorThickness"
+                android:background="?attr/ButtonEdgeColour"
+                android:layout_marginTop="@dimen/SeperatorMargins"
+                android:layout_marginBottom="@dimen/SeperatorMargins"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lytBuild">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/missile_launcher"
+                    android:id="@+id/txtMissileLauncher"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/txtDescMiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:layout_marginTop="@dimen/MainViewSpacing"
+                    android:background="?attr/TextViewBackgroundColour"
+                    android:text="@string/desc_missile_launcher"
+                    android:textColor="?attr/InfoColour"
+                    android:textStyle="bold" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/text_button_normal"
+                              android:id="@+id/btnBuildMissileLauncher"
+                              android:layout_marginLeft="@dimen/MainViewSideMargin"
+                              android:layout_marginRight="@dimen/MainViewSideMargin"
+                              android:layout_marginTop="@dimen/MainViewSpacing">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgContent"
+                        android:src="@drawable/build_missile_launcher"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginRight="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="£yay"
+                        android:id="@+id/txtCostMissile"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/text_button_normal"
+                              android:id="@+id/btnBuildNukeLauncher"
+                              android:layout_marginLeft="@dimen/MainViewSideMargin"
+                              android:layout_marginRight="@dimen/MainViewSideMargin"
+                              android:layout_marginTop="@dimen/MainViewSpacing">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView14"
+                        android:src="@drawable/build_missile_launcher_nukes"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginRight="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="£yay"
+                        android:id="@+id/txtCostNuke"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/SeparatorThickness"
+                    android:background="?attr/ButtonEdgeColour"
+                    android:layout_marginTop="@dimen/SeperatorMargins"
+                    android:layout_marginBottom="@dimen/SeperatorMargins"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/defensive_structures"
+                    android:id="@+id/txtDefensiveStructures"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/txtDescSAM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:layout_marginTop="@dimen/MainViewSpacing"
+                    android:background="?attr/TextViewBackgroundColour"
+                    android:text="@string/desc_sam_site"
+                    android:textColor="?attr/InfoColour"
+                    android:textStyle="bold" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/text_button_normal"
+                              android:id="@+id/btnBuildSAM"
+                              android:layout_marginLeft="@dimen/MainViewSideMargin"
+                              android:layout_marginRight="@dimen/MainViewSideMargin"
+                              android:layout_marginTop="@dimen/MainViewSpacing">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView15"
+                        android:src="@drawable/build_sam_site"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginRight="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="£yay"
+                        android:id="@+id/txtCostSAM"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtDescSentry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:layout_marginTop="@dimen/MainViewSpacing"
+                    android:background="?attr/TextViewBackgroundColour"
+                    android:text="@string/desc_sentry_gun"
+                    android:textColor="?attr/InfoColour"
+                    android:textStyle="bold" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/text_button_normal"
+                              android:id="@+id/btnBuildSentryGun"
+                              android:layout_marginLeft="@dimen/MainViewSideMargin"
+                              android:layout_marginRight="@dimen/MainViewSideMargin"
+                              android:layout_marginTop="@dimen/MainViewSpacing">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView165"
+                        android:src="@drawable/build_sentry"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginRight="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="£yay"
+                        android:id="@+id/txtCostSentryGun"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/SeparatorThickness"
+                    android:background="?attr/ButtonEdgeColour"
+                    android:layout_marginTop="@dimen/SeperatorMargins"
+                    android:layout_marginBottom="@dimen/SeperatorMargins"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/other"
+                    android:id="@+id/txtOther"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/txtDescOreMine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:layout_marginTop="@dimen/MainViewSpacing"
+                    android:background="?attr/TextViewBackgroundColour"
+                    android:text="@string/desc_ore_mine"
+                    android:textColor="?attr/InfoColour"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDescOreMineWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MainViewSideMargin"
+                    android:layout_marginRight="@dimen/MainViewSideMargin"
+                    android:background="?attr/TextViewBackgroundColour"
+                    android:text="@string/desc_ore_mine_warning"
+                    android:textColor="?attr/BadColour"
+                    android:textStyle="bold" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/text_button_normal"
+                              android:id="@+id/btnBuildOreMine"
+                              android:layout_marginLeft="@dimen/MainViewSideMargin"
+                              android:layout_marginRight="@dimen/MainViewSideMargin"
+                              android:layout_marginTop="@dimen/MainViewSpacing">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView166"
+                        android:src="@drawable/build_oremine"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginRight="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="£yay"
+                        android:id="@+id/txtCostOreMine"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/ButtonInset"
+                        android:layout_marginBottom="@dimen/ButtonInset"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/SeparatorThickness"
+                    android:background="?attr/ButtonEdgeColour"
+                    android:layout_marginTop="@dimen/SeperatorMargins"
+                    android:layout_marginBottom="@dimen/SeperatorMargins"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/text_button_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ButtonHeight"
+            android:text="@string/close"
+            android:id="@+id/textView8"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/MainViewSpacing"
+            android:layout_marginLeft="@dimen/MainViewSideMargin"
+            android:layout_marginRight="@dimen/MainViewSideMargin"
+            android:clickable="true"
+            android:onClick="ReturnToMainView"
+            android:layout_marginBottom="@dimen/MainViewSpacing"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</ScrollView>

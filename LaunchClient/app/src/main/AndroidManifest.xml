@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Release-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.apps.fast.launch"
+          android:installLocation="internalOnly">
+<!--Debug-->
+<!--manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.apps.fast.launchtest"
+          android:installLocation="internalOnly"-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Required to fix Google Maps related crash in Android 9.0 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--Release-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA9DLjMqmXgJ540-27HgMDyCSNHWKD_8_k" />
+
+        <!--Debug-->
+        <!--meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCBMqKkAl0Db_MWQqFvaGr6GC3MemJ_OmU" /-->
+
+        <receiver android:name=".notifications.LaunchRebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".notifications.AlertService"
+                 android:permission="android.permission.BIND_JOB_SERVICE"
+                 android:icon="@drawable/marker_missile"
+                 android:label="@string/app_name"/>
+
+        <activity android:name=".activities.MainActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

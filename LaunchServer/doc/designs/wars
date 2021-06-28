@@ -1,0 +1,166 @@
+
+# Status
+The following features/concepts were implemented:
+-Ability to sell missiles/interceptors by long-pressing.
+
+The following features/concepts were not implemented:
+-Admin-maintained list of "default" wars.
+-The concept of seperating wars from the "main world", and players opting to bring specific assets into wars.
+-The concept of balancing income and points handicapping in wars.
+-War types and "settings".
+
+Other comments:
+-The points system was deleted.
+-A war rewards system was implemented based on the best of five factors, or annihilating the opposing alliance by causing all members to be simultaneously dead or respawn protected.
+-"Nuclear escalation" alerts, and correspondingly revoking respawn protection, were implemented to prevent suicide strategies.
+-Modifications were made forcing players to be stuck in alliances (or unable to join one) while under attack, to prevent abuse of the alliance system.
+
+
+# Introduction
+An initial design and specification for a complete overhaul to the way wars are fought in Launch.
+
+
+
+
+# Justification
+This is an attempt to resolve the following gameplay issues:
+  -Incompatibilities between "empire building" and "fast paced" gameplay styles.
+  -Lack of motivation to build infrastructure, resulting in suicide strategies.
+  -No current way to manage suicide strategies without affecting the "easy bounce back" aspects of the game.
+  -Sporadic & forced 24/7 gameplay, exacerbating the above in community debate. 
+
+
+
+
+# Overview
+The current "continuous warfare" gameplay, and the "Wars & Friendships" system (via internal "treaties" system), shall be overhauled.
+
+Under normal, non-war circumstances players will no longer be able to launch missiles or interceptors.
+
+Many simultaneous wars, of different types, will exist instead. Administrators shall maintain a selection of "default" ones and players will be able to create & organise their own.
+
+When joining a war, players will opt which of their assets they wish to take into the war (structures and wealth).
+
+Wars will have constraints and conditions that must be met before they can go ahead.
+
+Wars will involve individual players or entire alliances, and will consist of war types that accomodate one or another. Leaving or joining alliances will only be possible while those players or alliances are not engaged in war.
+
+Entering wars will cost a per-player stake of in-game currency, distributed as prize money at the end of the war.
+
+
+
+
+# Specifications
+By default, players will only see content from the war their in, plus their own non-committed content shaded out. If they try to build too close to an invisible non-committed structure, they will get an onscreen warning.
+
+Players will be able to see current wars via the "Diplomacy" screen, and view (as spectator) any wars they're not involved in, including the "ceasefire" (default) map. The ceasefire map shall show everything, but players in ceasefire will not be damaged or be able to fire missiles/interceptors.
+
+Wars cannot be created or rescheduled to less than a set period of time in the future (game config, suggest 6 hours). If initial conditions are not met, all involved shall receive a report and the time shall automatically be pushed back by another configurable number of hours (suggest 24).
+
+One player will be the administrator for the war's settings until it starts. All players will receive a notification if the settings change.
+
+
+
+## General
+It shall be necessary for players to be able to immediately sell unwanted missiles and interceptors by long-pressing on them.
+
+Players will require "in war" and "not in war" amounts of money. They shall accrue it within normal structure maintenance rules.
+
+Players will specify what, in addition to themselves (and any portable missile/interceptor system they have), money and structures they wish to commit to a war (the remaining ones won't be part of the war and shall be indestructible, though structure separation rules shall still apply).
+
+
+
+## Handicaps
+Two handicaps shall apply to all team games. Non-allied player games shall have no handicaps (but are still subject to entry requirements)
+
+### Points
+The total value of everything initially brought into a battle from the start shall determine a points handicap, which shall be a proportional multiplier on all points earned by alliances, worked out as:
+Mean alliance wealth / Alliance wealth
+E.g. if Alliance1 bring £220,000 of stuff (player system values, player money and structures) to a war and Alliance2 bring £180,000 of stuff, the mean alliance wealth is £200,000 and the respective points handicaps shall be 0.909 & 1.111
+
+### Income
+The hourly incomes of players shall be biased, during the war, based on the relative number of players in their alliance or side, worked out as follows:
+£500 assuming this is the configured hourly value * ( Mean players per faction / Players in faction )
+E.g. in a world war, one faction has 30 players and the other has 20 players. The mean number of players is 25, so players in each faction shall earn respectively £417 and £625 per hour.
+
+
+## War types
+A number of different types of war shall exist. It shall be possible for players to create these themselves.
+Prize distributions, unless stated otherwise, shall conform closely to the current "weekly war" format and apply to the top-half of scoring players/alliances.
+
+### Deathmatch
+For non-allied players only. Every man for themself.
+
+### Last man standing
+For non-allied players only. Every man for themself, but dying causes them to drop out of the war. The last man standing (or highest scoring when the time limit is hit) receives all the prize money.
+
+### Factions
+For alliances only. Every faction for itself.
+
+### World War
+For alliances only. Two "sides" consisting of any number of alliances.
+
+
+## War options
+
+### Proposed start time
+A start time will be proposed. The war will not go ahead until all "conditions" are met.
+
+### Duration
+The maximum duration the war will last for.
+
+### Phoney war time.
+Initial protection time at the start of the war.
+
+### Respawn time
+How long players must wait before they respawn. Unlike previously, they shall still accrue wealth. Respawning shall be forced.
+
+### Respawn protection time.
+How long players are protected for when they respawn, if applicable.
+
+### Stake
+A per-player stake that must be paid in order to join the war, which will be distributed to the winners.
+
+
+## War "Conditions"
+These are parameters that must be fulfilled 
+
+### Minimum player value
+The minimum value each player must bring to the war (in addition to the stake).
+
+### Maximum player value
+The maximum value each player can bring to the war.
+
+### Minimum team value (team games only)
+The minimum value each team or faction must bring to the war.
+
+### Maximum team value (team games only)
+The maximum value each team or faction must bring to the war.
+
+### Maximum Point Handicap (team games only)
+The maximum allowable points handicap, to force initially committing even resources to the war.
+
+### Maximum Wealth Handicap (team games only)
+The maximum allowable wealth handicap, to force closer to even numbers of players in teams.
+
+
+
+
+# Omissions
+"Weekly-wars" feature to be removed.
+
+Inter-alliance treaties (friendships) to be removed, as these will be provided by the war types.
+
+Respawn invulnerability will no longer be required when joining the game.
+
+General alliance point biasing by number of players to be removed, and replaced with start of war handicaps based on numbers of players.
+
+Wealth cap feature to be removed.
+
+Players shall no longer stop accruing wealth when dead.
+
+AWOL shall no longer exist, but accounts shall still be subject to normal cleanup rules.
+
+As respawning will be forced, players will no longer need to respawn themselves.
+
+Alliance cooloff times shall no longer apply, as movement will only be possible 

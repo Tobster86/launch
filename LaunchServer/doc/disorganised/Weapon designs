@@ -1,0 +1,13 @@
+
+-= Missiles =-
+Speed:       slow (2000kph), medium (3000kph), fast (4000kph)
+Range:       short (5000km), medium (11000km), long (22000km)
+BlastRadius: small, medium, large
+Damage:      low (200), medium (300), high (400)
+Nuclear:     yes, no
+Tracking:    yes, no
+ECM:         yes, no
+
+-= Interceptors =-
+Speed:      slow (3500kph), fast (5000kph)
+Range:      personal (10km), short (25km), medium (100km), long (400km), very long (2000km), anti-icbm (5000km)

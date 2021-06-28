@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:right="@dimen/CheckBoxSpaceToText">
+            <stroke
+                android:width="@dimen/CheckBoxBorderWidth"
+                android:color="?attr/MainUIColour" />
+            <solid
+                android:color="?attr/ButtonTransparency" />
+            <size android:width="@dimen/CheckBoxSize"
+                  android:height="@dimen/CheckBoxSize"/>
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="45">
+            <shape
+                android:shape="line" >
+                <stroke android:color="?attr/MainUIColour" android:width="@dimen/CheckBoxBorderWidth" />
+                <solid
+                    android:color="?attr/MainUIColour" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="-45">
+            <shape
+                android:shape="line" >
+                <stroke android:color="?attr/MainUIColour" android:width="@dimen/CheckBoxBorderWidth" />
+                <solid
+                    android:color="?attr/MainUIColour" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

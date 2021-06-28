@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/SelectListSpacing"
+              android:background="@drawable/detail_button">
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgAvatar"
+        android:layout_margin="@dimen/ButtonEdgePadding"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/lytText"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <LinearLayout
+            android:id="@+id/lytMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMembersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/SeperatorMargins"
+                android:text="@string/alliance_members"/>
+
+            <TextView
+                android:id="@+id/txtMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="yay members"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytWorth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtWorthTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/SeperatorMargins"
+                android:text="@string/worth"/>
+
+            <TextView
+                android:id="@+id/txtWorth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="£xxx"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytOffences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtOffencesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/SeperatorMargins"
+                android:text="@string/offences"/>
+
+            <TextView
+                android:id="@+id/txtOffences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="£xxx"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytDefences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDefencesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/SeperatorMargins"
+                android:text="@string/defences"/>
+
+            <TextView
+                android:id="@+id/txtDefences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="£xxx"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgAtWar"
+        android:layout_margin="@dimen/ButtonEdgePadding"
+        android:src="@drawable/button_declare_war"/>
+
+    <ImageView
+        android:layout_width="@dimen/PlayerInfoIconSize"
+        android:layout_height="@dimen/PlayerInfoIconSize"
+        android:id="@+id/imgAffiliated"
+        android:layout_margin="@dimen/ButtonEdgePadding"
+        android:src="@drawable/button_propose_affiliation"/>
+</LinearLayout>

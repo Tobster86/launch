@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lytMain">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/lytTop"
+            android:layout_weight="1"
+            android:background="?attr/PanelTransparency">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/privacy_zone_title"
+                android:id="@+id/txtPlayerJoins"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:id="@+id/lytEmpty">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Text"
+                android:id="@+id/txtMain"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:id="@+id/lytBottom">
+
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/PanelTransparency">
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/MainViewSpacing"
+                        android:layout_marginTop="@dimen/MainViewSpacing"
+                        android:layout_marginRight="@dimen/MainViewSpacing"
+                        android:layout_marginBottom="@dimen/MainViewSpacing">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/privacy_zone_blurb"
+                            android:id="@+id/txtPrivacyBlurb"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privacy_radius"
+                            android:id="@+id/txtRadius"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/MainViewSpacing"
+                            android:visibility="gone"/>
+
+                        <SeekBar
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/skbRadius"
+                            android:layout_weight="1"
+                            android:progressDrawable="@drawable/progress_bar"
+                            android:minHeight="@dimen/SeekBarSize"
+                            android:maxHeight="@dimen/SeekBarSize"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/privacy_move_out"
+                            android:textColor="?attr/BadColour"
+                            android:id="@+id/txtPrivacyMoveOut"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:background="@drawable/text_button_normal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/ButtonHeight"
+                            android:text="@string/finish"
+                            android:id="@+id/btnFinish"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/MainViewSpacing"
+                            android:layout_marginLeft="@dimen/MainViewSideMargin"
+                            android:layout_marginRight="@dimen/MainViewSideMargin"
+                            android:clickable="true"/>
+
+                        <TextView
+                            android:background="@drawable/text_button_normal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/ButtonHeight"
+                            android:text="@string/clear_all"
+                            android:id="@+id/btnClearAll"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/MainViewSpacing"
+                            android:layout_marginLeft="@dimen/MainViewSideMargin"
+                            android:layout_marginRight="@dimen/MainViewSideMargin"
+                            android:clickable="true"/>
+
+                        <TextView
+                            android:background="@drawable/text_button_normal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/ButtonHeight"
+                            android:text="@string/save"
+                            android:id="@+id/btnSave"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/MainViewSpacing"
+                            android:layout_marginLeft="@dimen/MainViewSideMargin"
+                            android:layout_marginRight="@dimen/MainViewSideMargin"
+                            android:clickable="true"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:background="@drawable/text_button_normal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/ButtonHeight"
+                            android:text="@string/delete"
+                            android:id="@+id/btnDelete"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/MainViewSpacing"
+                            android:layout_marginLeft="@dimen/MainViewSideMargin"
+                            android:layout_marginRight="@dimen/MainViewSideMargin"
+                            android:clickable="true"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </ScrollView>
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>
